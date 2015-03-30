@@ -1026,7 +1026,7 @@
 	{
 		position: relative;
 		overflow: hidden;
-		padding: 6em 0 6em 0;
+		padding: 2em 0 2em 0;
 		background: #2b252c;
 		color: #fff;
 	}
@@ -1035,48 +1035,12 @@
 		{
 			background: #fff;
 			color: #2b252c;
+			margin: center
 		}
 
 		
+
 		
-		#footer h2,
-		#footer h3,
-		#footer h4,
-		#footer h5,
-		#footer h6
-		{
-			color: #fff;
-		}
-
-		#footer .contact
-		{
-			text-align: center;
-		}
-		
-			#footer .contact p
-			{
-				text-align: center;
-				margin: 0 0 3em 0;
-			}
-		
-		#footer .copyright
-		{
-			text-align: center;
-			color: rgba(128,128,128,0.75);
-			font-size: 0.8em;
-			cursor: default;
-		}
-
-			#footer .copyright a
-			{
-				color: rgba(128,128,128,0.75);
-			}
-
-				#footer .copyright a:hover
-				{
-					color: rgba(212,212,212,0.85);
-				}
-
 /*********************************************************************************/
 /* Carousel                                                                      */
 /*********************************************************************************/
