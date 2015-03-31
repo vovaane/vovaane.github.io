@@ -406,12 +406,12 @@
 			ol.default
 			{
 				list-style: decimal;
-				padding-left: 1.25em;
+				padding-left: center;
 			}
 
 				ol.default li
 				{
-					padding-left: 0.25em;
+					padding-left: center
 				}
 				
 	/* Form */
@@ -688,11 +688,11 @@
 
 	#header
 	{
-		position: relative;
-		background-image: url('http://365psd.ru/images/backgrounds/blackmamba.png');
+		position: repeat;
+		background-image: url('http://wallpaperscraft.ru/image/derevyannyy_temnyy_fon_tekstura_55321_3840x1200.jpg');
 		background-size: cover;
 		background-position: center center;
-		background-attachment: repeat;
+		background-attachment: fixed;
 		color: #fff;
 		text-align: center;
 		padding: 2.5em 0 2em 0;
@@ -738,7 +738,7 @@
 	
 		#header h1
 		{
-			color: #f55;
+			color: #fff;
 			font-size: 3em;
 			line-height: 2em;
 		}
@@ -778,7 +778,7 @@
 		
 		#header footer
 		{
-			margin: 1em 0 0 0;
+			margin: center center ;
 		}
 		
 		#header hr
@@ -1036,7 +1036,7 @@
 		{
 			background: #fff;
 			color: #2b252c;
-			margin: center
+			margin: auto
 		}
 
 		
