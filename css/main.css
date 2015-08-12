@@ -25,6 +25,10 @@ Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive,
 /*=================================================================
 	Basic Setup
 ==================================================================*/
+html{
+  overflow-y: scroll;
+  overflow-x: auto;
+}
 
 body {
     background-color: #FFFFFF;
