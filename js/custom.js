@@ -598,4 +598,23 @@ function parallaxInit() {
 $(window).bind("load", function () {
     parallaxInit()
 });
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+
+$('.bxslider').bxSlider({
+  auto: true,
+  autoControls: true
+});
+
+$(document).ready(function(){
+  $('.slider1').bxSlider({
+    slideWidth: 400,
+    minSlides: 1,
+    maxSlides: 3,
+    slideMargin: 0
+  });
+});
+
+
                             
