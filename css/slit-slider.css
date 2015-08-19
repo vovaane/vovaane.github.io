@@ -167,12 +167,14 @@
 	left: 5%;
 	border-right: none;
 	border-top: none;
+	visibility: hidden;
 }
 
 .nav-arrows span.nav-arrow-next {
 	right: 5%;
 	border-left: none;
 	border-bottom: none;
+	visibility: hidden;
 }
 
 /* Custom navigation dots */
@@ -239,7 +241,7 @@
 /* Content elements */
 
 #home .bg-img-1 {
-	background-image: url(http://ib3.keep4u.ru/b/2012/03/29/fe/fe5339d4d50713052bcd1752284ada48.gif);
+	background-image: url(../img/hockey_large.jpg);
 }
 #home .bg-img-2 {
 	background-image: url(../img/slides/2.jpg);

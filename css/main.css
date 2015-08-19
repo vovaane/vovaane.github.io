@@ -224,7 +224,12 @@ h1, h2, h3, h4, h5, h6 {
 .bg-one {
     background-color: #FFFFFF;
     font-size: 16px;
+    color: #696868;
 }
+.bg-one i{
+    color: #436A9A;
+}
+
 
 .bg-one1{
     background-color: #F1F0F0;
@@ -253,7 +258,9 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: cover;
 }
 
-
+.center-box{
+    text-align: center;
+}
 /*=================================================================
 	Home Slider
 ==================================================================*/
@@ -362,10 +369,19 @@ h1, h2, h3, h4, h5, h6 {
 /*=================================================================
 	About us section
 ==================================================================*/
-
 #about {
     padding: 70px 0;
+    background-image: url(../img/sport_140.jpg);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #423A3A;
+
 }
+#about i{
+    color: #436A9A;
+}
+
 
 .icon-box {
 	position: relative;
@@ -374,8 +390,8 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: transparent;
 	margin: 46.19px auto 60px;
 	padding: 20px 0;
-	border-left: solid 3px #ddd;
-	border-right: solid 3px #ddd;
+	border-left: solid 3px #436A9A;
+	border-right: solid 3px #436A9A;
 	
 	-webkit-transform: translateZ(0px);
 	   -moz-transform: translateZ(0px);
@@ -421,14 +437,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon-box:before {
 	top: -56.5685px;
-	border-top: solid 4.2426px #ddd;
-	border-right: solid 4.2426px #ddd;
+	border-top: solid 4.2426px #436A9A;
+	border-right: solid 4.2426px #436A9A;
 }
 
 .icon-box:after {
 	bottom: -56.5685px;
-	border-bottom: solid 4.2426px #ddd;
-	border-left: solid 4.2426px #ddd;
+	border-bottom: solid 4.2426px #436A9A;
+	border-left: solid 4.2426px #436A9A;
 }
 
 
@@ -475,13 +491,6 @@ height:100%;
 /*=================================================================
 	Our skills
 ==================================================================*/
-
-#team-skills {
-    padding: 70px 0;
-    background-image: url(../img/sport_140.jpg);
-    font-size: 20px;
-
-}
 
 .carier-section{
     padding-top: 60px;
