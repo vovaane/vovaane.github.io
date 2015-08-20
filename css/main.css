@@ -32,7 +32,7 @@ html{
 
 body {
     background-color: #FFFFFF;
-	font-family: 'Ubuntu', 'Arial', sans-serif;
+	font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     color: #000000;
 }
@@ -70,8 +70,12 @@ a:focus, a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: oswald;
-    font-weight: 400;
+    font-family: Helvetica;
+    font-weight: 200;
+}
+
+h2{
+    letter-spacing: 4px;
 }
 
 .kill-margin-bottom {
@@ -196,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title h2 {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 38px;
     color: #fff;
 }
@@ -221,35 +225,39 @@ h1, h2, h3, h4, h5, h6 {
     outline: 0;
 }
 
-.bg-one {
-    background-color: #FFFFFF;
-    font-size: 16px;
-    color: #696868;
+
+#tech{
+background-image: url(../img/sport_140.jpg);
+background-attachment: fixed !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
 }
+
 .bg-one i{
     color: #436A9A;
 }
 
 
-.bg-one1{
-    background-color: #F1F0F0;
-    text-align: center;
+.bg-one {
+    
+    font-size: 18px;
+    color: #696868;
     padding-top: 60px;
-    font-size: 22px;
-    padding-bottom: 100px
-
+    padding-bottom: 60px;
 }
-.bg-one1 .title{
-    color: #000000;
-    padding-bottom:30px;
+.bg-one i{
+    color: #000;
 }
 
-.bg-one1 p{
-    color: #585858;
+
+.bg-one1{
+    background-color: #FFFFFF;
+    font-size: 18px;
 }
-.bg-one1 li{
-    color: #585858;
-}
+
 
 .parallax-section {
 	background-attachment: fixed !important;
@@ -261,6 +269,11 @@ h1, h2, h3, h4, h5, h6 {
 .center-box{
     text-align: center;
 }
+
+.slider1 i{
+color: #436A9A;
+}
+
 /*=================================================================
 	Home Slider
 ==================================================================*/
@@ -323,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid #5F9EEC;
   margin-bottom: 0;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight:bold;
+  letter-spacing: 2px;
   
 }
 
@@ -371,7 +384,6 @@ h1, h2, h3, h4, h5, h6 {
 ==================================================================*/
 #about {
     padding: 70px 0;
-    background-image: url(../img/sport_140.jpg);
     text-align: center;
     font-size: 18px;
     font-weight: bold;
@@ -381,6 +393,12 @@ h1, h2, h3, h4, h5, h6 {
 #about i{
     color: #436A9A;
 }
+.bg-one h3{
+    color: #000;
+
+}
+
+
 
 
 .icon-box {
@@ -506,6 +524,7 @@ height:100%;
     background-image: url(../img/karta.png);
     width: 100%;
     height: 500px;
+    text-align: center;
 }
 
 .contact-form {
