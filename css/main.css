@@ -206,7 +206,7 @@ h2{
 }
 
 .color {
-    color: #000000;
+    color: rgba(0, 0, 6, 0.76);
 }
 
 .sub-title {
@@ -236,9 +236,7 @@ background-attachment: fixed !important;
 
 }
 
-.bg-one i{
-    color: #436A9A;
-}
+
 
 
 .bg-one {
@@ -250,12 +248,17 @@ background-attachment: fixed !important;
 }
 .bg-one i{
     color: #000;
+    line-height: 150px;
+}
+.bg-one .title{
+    padding-bottom: 20px;
 }
 
 
 .bg-one1{
     background-color: #FFFFFF;
     font-size: 18px;
+    color: #7D7D7D;
 }
 
 
@@ -403,13 +406,14 @@ color: #436A9A;
 
 .icon-box {
 	position: relative;
-	width: 160px; 
-	height: 92.38px;
-	background-color: transparent;
+	width: 200px; 
+	height: 200px;
+	background-color: rgba(255, 255, 255, 0.45);
 	margin: 46.19px auto 60px;
 	padding: 20px 0;
-	border-left: solid 3px #436A9A;
-	border-right: solid 3px #436A9A;
+	border: solid 3px #939598;
+    border-radius: 100px;
+
 	
 	-webkit-transform: translateZ(0px);
 	   -moz-transform: translateZ(0px);
@@ -436,34 +440,6 @@ color: #436A9A;
 			transform: translateY(-10px);
 }
 
-.icon-box:before,
-.icon-box:after {
-	content: "";
-	position: absolute;
-	z-index: 1;
-	width: 113.14px;
-	height: 113.14px;
-	background-color: inherit;
-	left: 20.4315px;
-
-	-webkit-transform: scaleY(0.5774) rotate(-45deg);
-	   -moz-transform: scaleY(0.5774) rotate(-45deg);
-		-ms-transform: scaleY(0.5774) rotate(-45deg);
-		 -o-transform: scaleY(0.5774) rotate(-45deg);
-			transform: scaleY(0.5774) rotate(-45deg);
-}
-
-.icon-box:before {
-	top: -56.5685px;
-	border-top: solid 4.2426px #436A9A;
-	border-right: solid 4.2426px #436A9A;
-}
-
-.icon-box:after {
-	bottom: -56.5685px;
-	border-bottom: solid 4.2426px #436A9A;
-	border-left: solid 4.2426px #436A9A;
-}
 
 
 
@@ -477,7 +453,7 @@ color: #436A9A;
 }
 
 #services .title {
-    padding-bottom: 125px;
+    padding-bottom: 50px;
 }
 
 .service-block {
@@ -493,7 +469,9 @@ color: #436A9A;
 .service-block h3 {
 	text-transform: uppercase;
 }
-
+#services p{
+    font-size: 16px;
+}
 
 
 /*=================================================================
@@ -577,6 +555,7 @@ height:100%;
     background-color: #000;
     color: #FFF;
     text-align: center;
+    padding-top: 20px;
 }
 
 
