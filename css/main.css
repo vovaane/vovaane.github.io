@@ -32,7 +32,7 @@ html{
 
 body {
     background-color: #FFFFFF;
-	font-family: 'Ubuntu', 'Arial', sans-serif;
+	font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     color: #000000;
 }
@@ -70,8 +70,12 @@ a:focus, a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: oswald;
-    font-weight: 400;
+    font-family: Helvetica;
+    font-weight: 200;
+}
+
+h2{
+    letter-spacing: 4px;
 }
 
 .kill-margin-bottom {
@@ -196,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title h2 {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 38px;
     color: #fff;
 }
@@ -221,30 +225,31 @@ h1, h2, h3, h4, h5, h6 {
     outline: 0;
 }
 
-.bg-one {
-    background-color: #FFFFFF;
-    font-size: 16px;
+#tech{
+background-image: url(../img/sport_140.jpg);
+background-attachment: fixed !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.bg-one {
+    
+    font-size: 18px;
+    color: #696868;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.bg-one i{
+    color: #000;
+}
+
 
 .bg-one1{
-    background-color: #F1F0F0;
-    text-align: center;
-    padding-top: 60px;
-    font-size: 22px;
-    padding-bottom: 100px
-
-}
-.bg-one1 .title{
-    color: #000000;
-    padding-bottom:30px;
+    background-color: #FFFFFF;
+    font-size: 18px;
 }
 
-.bg-one1 p{
-    color: #585858;
-}
-.bg-one1 li{
-    color: #585858;
-}
 
 .parallax-section {
 	background-attachment: fixed !important;
@@ -253,7 +258,12 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: cover;
 }
 
-
+.center-box{
+    text-align: center;
+}
+.slider1 i{
+color: #436A9A;
+}
 /*=================================================================
 	Home Slider
 ==================================================================*/
@@ -316,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid #5F9EEC;
   margin-bottom: 0;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight:bold;
+  letter-spacing: 2px;
   
 }
 
@@ -362,10 +372,21 @@ h1, h2, h3, h4, h5, h6 {
 /*=================================================================
 	About us section
 ==================================================================*/
-
 #about {
     padding: 70px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #423A3A;
+
 }
+#about i{
+    color: #436A9A;
+}
+.bg-one h3{
+    color: #000;
+}
+
 
 .icon-box {
 	position: relative;
@@ -374,8 +395,8 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: transparent;
 	margin: 46.19px auto 60px;
 	padding: 20px 0;
-	border-left: solid 3px #ddd;
-	border-right: solid 3px #ddd;
+	border-left: solid 3px #436A9A;
+	border-right: solid 3px #436A9A;
 	
 	-webkit-transform: translateZ(0px);
 	   -moz-transform: translateZ(0px);
@@ -421,14 +442,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon-box:before {
 	top: -56.5685px;
-	border-top: solid 4.2426px #ddd;
-	border-right: solid 4.2426px #ddd;
+	border-top: solid 4.2426px #436A9A;
+	border-right: solid 4.2426px #436A9A;
 }
 
 .icon-box:after {
 	bottom: -56.5685px;
-	border-bottom: solid 4.2426px #ddd;
-	border-left: solid 4.2426px #ddd;
+	border-bottom: solid 4.2426px #436A9A;
+	border-left: solid 4.2426px #436A9A;
 }
 
 
@@ -476,13 +497,6 @@ height:100%;
 	Our skills
 ==================================================================*/
 
-#team-skills {
-    padding: 70px 0;
-    background-image: url(../img/sport_140.jpg);
-    font-size: 20px;
-
-}
-
 .carier-section{
     padding-top: 60px;
     padding-bottom:60px;
@@ -497,6 +511,7 @@ height:100%;
     background-image: url(../img/karta.png);
     width: 100%;
     height: 500px;
+    text-align: center;
 }
 
 .contact-form {
@@ -545,5 +560,10 @@ height:100%;
 	margin: -5px 0 0 15px;
 }
 
+#footer{
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+}
 
 
