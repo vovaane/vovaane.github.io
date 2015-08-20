@@ -225,13 +225,21 @@ h2{
     outline: 0;
 }
 
+
 #tech{
 background-image: url(../img/sport_140.jpg);
 background-attachment: fixed !important;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
+
 }
+
+.bg-one i{
+    color: #436A9A;
+}
+
 
 .bg-one {
     
@@ -261,9 +269,11 @@ background-attachment: fixed !important;
 .center-box{
     text-align: center;
 }
+
 .slider1 i{
 color: #436A9A;
 }
+
 /*=================================================================
 	Home Slider
 ==================================================================*/
@@ -385,7 +395,10 @@ color: #436A9A;
 }
 .bg-one h3{
     color: #000;
+
 }
+
+
 
 
 .icon-box {
