@@ -256,7 +256,7 @@ background-attachment: fixed !important;
     background-color: rgba(253, 253, 253, 0.75);
     padding-top: 20px;
     padding-bottom: 20px;
-    border-radius: 30px;
+    border-radius: 0px;
     border: 3px solid #5E9DEB;
 }
 
