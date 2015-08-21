@@ -227,22 +227,17 @@ h2{
 
 
 #tech{
-background-image: url(../img/sport_140.jpg);
+background-image: url(../img/ice-hockey.jpeg);
 background-attachment: fixed !important;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
 }
-
-
-
 
 .bg-one {
     
-    font-size: 18px;
-    color: #696868;
+    font-size: 16px;
+    color: #595A5A;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -250,8 +245,24 @@ background-attachment: fixed !important;
     color: #000;
     line-height: 150px;
 }
+.bg-one span{
+    background-color:;
+    border-radius: 25px;
+    padding: 7px;
+
+}
+
+.wrap-about{
+    background-color: rgba(253, 253, 253, 0.75);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    border: 10px solid rgb(94, 157, 235);
+}
+
 .bg-one .title{
     padding-bottom: 20px;
+    color: #FFF;
 }
 
 
@@ -404,6 +415,7 @@ color: #436A9A;
 }
 .bg-one h3{
     color: #000;
+    font-weight: 400;
 
 }
 
@@ -497,7 +509,7 @@ height:100%;
 .carier-section{
     padding-top: 60px;
     padding-bottom:60px;
-     background: url(../img/nice_snow.png); 
+     background: #EDEDED; 
 }
 /*=================================================================
 	Contact
