@@ -66,49 +66,22 @@
         <!--
         Welcome Slider
         ==================================== -->
-		<section id="home">	    
+		<section id="home">	
+		
 		
             <div id="slitSlider" class="sl-slider-wrapper">
 				
 					
 					<!-- single slide item -->
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-1"></div>
-						<div class="carousel-caption">
-							<div>
-								<img class="wow fadeInUp" src="img/logo2.png" alt="TrackIT">
-							</div>
-						</div>
-						</div>
-					</div>
-					<!-- /single slide item -->
 					
-					
-					</div>
-					<!-- /single slide item -->
-
-				</div><!-- /sl-slider -->
-				
-				<nav id="nav-arrows" class="nav-arrows">
-					<span class="nav-arrow-prev">Previous</span>
-					<span class="nav-arrow-next">Next</span>
-				</nav>
-
-				<nav id="nav-dots" class="nav-dots">
-					<span class="nav-dot-current"></span>
-					<span></span>
-					<span></span>
-				</nav>
-
-			</div><!-- /slider-wrapper -->
-		</section>
-		<!--/#home section-->
-		
-        <!-- 
-        Fixed Navigation
-        ==================================== -->
-        <header id="navigation" class="navbar navbar-inverse">
+						
+							
+							<div class="covervid-wrapper">
+              <video class="covervid-video" autoplay loop poster="img/video-fallback.png" mute>
+              <source src="http://static.videezy.com/system/resources/previews/000/000/121/original/Frontier.mp4" type="video/mp4">
+              </video>
+              </div>
+              <div id="navigation" class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
                     <!-- responsive nav button -->
@@ -130,7 +103,7 @@
                 </div>
 
 				<!-- main nav -->
-                <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+                <nav class="collapse navbar-collapse navbar-right" id="home"role="Navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li class="current"></li>
                         <li><a href="#about">О НАС</a></li>
@@ -154,7 +127,39 @@
 				<!-- /main nav -->
 				
             </div>
-        </header>
+        </div>  
+						<div class="carousel-caption">
+							<div>
+								<img class="wow fadeInUp" src="img/logo2.png" alt="TrackIT">
+							</div>
+						</div
+					<!-- /single slide item -->
+					
+					
+					<!-- /single slide item -->
+
+				</div><!-- /sl-slider -->
+				
+				<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>
+				</nav>
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+
+		</section>
+		<!--/#home section-->
+		
+        <!-- 
+        Fixed Navigation
+        ==================================== -->
+        
         <!--
         End Fixed Navigation
         ==================================== -->
@@ -245,7 +250,7 @@
 
 					<!-- section title -->
 					<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
-						<h2><span class="color">Технология</span></h2>
+						<h2>Технология</h2>
 					</div>
 					<!-- /section title -->
 					
@@ -257,10 +262,10 @@
 							</div>					
 							<!-- Express About Yourself -->
 							<div class="about-content text-center">
-								<h3>Сбор данных</h3>								
-								<li>Координаты игроков каждую 0.1 секунду игрового времени.</li>
-                                <li>Фиксирование каждого события матча.</li>
-                                <li>Съемка 10 кадров /сек.</li>
+								<h3><span>Сбор данных</span></h3>								
+								<li>Координаты игроков каждую 0.1 секунду игрового времени</li>
+                                <li>Фиксирование каждого события матча</li>
+                                <li>Съемка 10 кадров /сек</li>
 							</div>
 						</div>
 					</div> 
@@ -274,7 +279,7 @@
 							</div>
 							<!-- Express About Yourself -->
 							<div class="about-content text-center">
-								<h3>Обработка</h3>
+								<h3><span>Обработка</span></h3>
 								<li>Распознавание игроков / шайбы</li>
           <li>Распределение событий</li>
           <li>Контроль качества</li>
@@ -291,8 +296,8 @@
 								<i class="fa fa-bar-chart fa-4x"></i>
 							</div>
 							<!-- Express About Yourself -->
-							<div class="about-content text-center" style="line-height:21px">
-								<h3>Визуализация</h3>
+							<div class="about-content text-center" style="line-height:19.5px">
+								<h3><span>Визуализация</span></h3>
 								<li>Предоставление аналитики всех показателей</li>
           <li>Персонализированный интерфейс для каждого клиента</li>
           <li>Доступность к базе данных 24/7</li>
@@ -511,6 +516,8 @@
 		<script src="js/jquery.fitvids.js"></script>
 		<!-- Grid js -->
 		<script src="js/grid.js"></script>
+
+		<script src="js/covervid.min.js"></script>
 		<!-- Custom js -->
 		<script src="js/custom.js"></script>
 

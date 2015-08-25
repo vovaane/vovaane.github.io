@@ -241,7 +241,9 @@
 /* Content elements */
 
 #home .bg-img-1 {
-	background-image: url(../img/hockey_large.jpg);
+	background-video: url(http://taxify.co/wp-content/uploads/2014/06/file.mp4);
+    background-size: cover;
+    background-position: center center;
 }
 #home .bg-img-2 {
 	background-image: url(../img/slides/2.jpg);

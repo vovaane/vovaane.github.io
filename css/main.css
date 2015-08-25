@@ -227,22 +227,17 @@ h2{
 
 
 #tech{
-background-image: url(../img/sport_140.jpg);
+background-image: url(../img/ice-hockey.jpeg);
 background-attachment: fixed !important;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
 }
-
-
-
 
 .bg-one {
     
-    font-size: 18px;
-    color: #696868;
+    font-size: 16px;
+    color: #595A5A;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -250,8 +245,24 @@ background-attachment: fixed !important;
     color: #000;
     line-height: 150px;
 }
+.bg-one span{
+    background-color:;
+    border-radius: 25px;
+    padding: 7px;
+
+}
+
+.wrap-about{
+    background-color: rgba(253, 253, 253, 0.75);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0px;
+    border: 3px solid #5E9DEB;
+}
+
 .bg-one .title{
     padding-bottom: 20px;
+    color: #FFF;
 }
 
 
@@ -284,6 +295,13 @@ color: #436A9A;
 #home {
     position: relative;
 }
+.covervid-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 #slitSlider .carousel-caption {
 	padding: 0;
@@ -294,7 +312,7 @@ color: #436A9A;
     left: 0;
     top: 0;
     z-index: 11;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0, 0, 0, 0.78);
 }
 
 #slitSlider .carousel-caption a {
@@ -330,17 +348,40 @@ color: #436A9A;
 ==================================================================*/
 
 .navbar-inverse {
-	background-color: rgba(255, 255, 255, 0.85);
+	background-color: rgba(255, 255, 255, 0);
 	width: 100%;
 	z-index: 99;
 }
 
 .navbar {
-  border-bottom: 2px solid #5F9EEC;
+  border-bottom: 0px solid #5F9EEC;
   margin-bottom: 0;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   letter-spacing: 2px;
-  
+  -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.opaque {
+  border-bottom: 2px solid #5F9EEC;
+  background-color: white;
+  background: white;
+  transition: background-color 1s ease 0s; /* Transition effect to make it fade in (optional) */
+  box-shadow: 0px 0px 4px #969696;
+}
+.navbar.opaque .navbar-brand h1 {
+  color: #000;
+  transition: color 1s ease 0s;
+}
+.navbar.opaque .navbar-nav > li > a {
+  color: #000;
+  transition: color 1s ease 0s;
+}
+.navbar.opaque .navbar-nav > li > a:active {
+  text-decoration: underline;
 }
 
 
@@ -352,12 +393,12 @@ color: #436A9A;
 .navbar-brand h1 {
 	margin: 3;
     font-size: 30px;
-    color: #000000;
+    color: #fff;
     font-weight: bolder;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #000000;
+    color: #fff;
     font-size: 18px;
     line-height: 26px;
     padding: 20px 15px;
@@ -404,6 +445,7 @@ color: #436A9A;
 }
 .bg-one h3{
     color: #000;
+    font-weight: 400;
 
 }
 
@@ -497,7 +539,7 @@ height:100%;
 .carier-section{
     padding-top: 60px;
     padding-bottom:60px;
-     background: url(../img/nice_snow.png); 
+     background: #EDEDED; 
 }
 /*=================================================================
 	Contact
