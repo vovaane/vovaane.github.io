@@ -402,12 +402,38 @@
 	Mobile (Landscape) Design for a width of 480px
 ==============================================================*/
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .col-xs-1-5{
+        width: 100%;
+        float: left
+    }
 	/* homepage slider */
     #slitSlider .carousel-caption h2 {
         font-size: 30px;
     }
+ #about {
+    background:#ffffff;
+}
+
+#about .title{
+    padding-bottom: 5px;
+}
+#about h2{
+    padding-bottom: 15px;
+}
+.skill-chart1{
+float: none;
+ padding: 0px;
+
+
+}
+.skill-chart{
+ float:none;
+ padding: 0px;
+
+
+}
+
 
     #slitSlider .carousel-caption h3 {
         font-size: 25px;
@@ -460,6 +486,7 @@
         margin: 0 auto 75px;
         width: 70%;
     }
+   
 
 	/* services */
     .service-block {
