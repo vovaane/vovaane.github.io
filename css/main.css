@@ -419,9 +419,9 @@ color: #436A9A;
 
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 26px;
-    padding: 20px 15px;
+    padding: 14px 14px;
 
 	-webkit-transition: background .5s ease-in-out 0s;
 	   -moz-transition: background .5s ease-in-out 0s;
@@ -443,6 +443,14 @@ color: #436A9A;
 .dropdown .pull-right{
     float:right;
 
+}
+
+.navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    padding-left: 30%;
+    overflow: visible!important;
 }
 
 
@@ -522,6 +530,16 @@ color: #436A9A;
     width: 100px;
     height: 100px;
     padding-top: 50px;
+}
+.adapt-img{
+    width: 100%;
+    max-width: 764px;
+    margin: 0 auto;
+}
+
+.adapt-img img {
+  width: 100%; 
+  height: auto; 
 }
 
 
