@@ -240,9 +240,6 @@ color: #044381;
     font-size: 70px;
 }
 
-.skill-chart h3{
-    font-size: 70px;
-}
 
 
 #tech{
@@ -433,8 +430,8 @@ color: #436A9A;
 }
 
 .navbar-inverse .navbar-nav > li.current > a {
-    color: #111213;
-    background-color: rgba(41, 201, 224, 0.31);
+    color: #0EB9DA;
+    background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
