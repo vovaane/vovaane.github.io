@@ -35,6 +35,7 @@ body {
 	font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     color: #000000;
+    -webkit-font-smoothing: antialiased;
 }
 
 ol, ul {
