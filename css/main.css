@@ -427,7 +427,7 @@ color: #185298;
 		 -o-transition: background .5s ease-in-out 0s;
 			transition: background .5s ease-in-out 0s;
             font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
+            font-weight:;
             letter-spacing: 2px;
 }
 
