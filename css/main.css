@@ -70,8 +70,8 @@ a:focus, a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Helvetica;
-    font-weight: 200;
+    font-family: 'Roboto';
+    font-weight: 300;
 }
 
 h2{
@@ -200,7 +200,7 @@ h2{
 
 .title h2 {
     
-    font-weight: 500;
+    font-weight: 300;
     font-size: 38px;
     color: #fff;
 }
@@ -303,7 +303,7 @@ background-attachment: fixed !important;
 }
 
 .slider1 i{
-color: #436A9A;
+color: #185298;
 }
 
 /*=================================================================
@@ -398,7 +398,7 @@ color: #436A9A;
   transition: color 1s ease 0s;
 }
 .navbar.opaque .navbar-nav > li > a:active {
-  text-decoration: underline;
+
 }
 
 
@@ -437,7 +437,7 @@ color: #436A9A;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: rgb(1, 57, 169);
+    color:#B6E6EF;
 }
 .dropdown .pull-right{
     float:right;
@@ -445,7 +445,6 @@ color: #436A9A;
 }
 
 .navbar-collapse.collapse {
-    display: block!important;
     height: auto!important;
     padding-bottom: 0;
     padding-left: 30%;
@@ -456,6 +455,12 @@ color: #436A9A;
 /*=================================================================
 	About us section
 ==================================================================*/
+#about_us{
+    background-color: #044381;
+}
+#about_us h2{
+    color: #000000;
+}
 #about {
     padding-top: 30px;
     text-align: center;
@@ -466,27 +471,27 @@ color: #436A9A;
     background-repeat: no-repeat;
     background-size:310px;
     background-color: #fff;
-    font-weight: 300;
+    font-weight: 200;
 
 }
 .img-new-bg{
-    background: -webkit-linear-gradient(rgba(64, 193, 211, 0.9), white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(64, 193, 211, 0.9), white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(64, 193, 211, 0.9), white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(64, 193, 211, 0.9), white); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(rgba(64, 193, 211, 0.9), #044381); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(64, 193, 211, 0.9), #044381); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(64, 193, 211, 0.9), #044381); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(64, 193, 211, 0.9), #044381); /* Standard syntax (must be last) */
     width: 100%;
     height: auto;
     left: 0px;
 }
 
 #about i{
-    color: #185298;
-    font-size: 100px;
+    color: #00CFEB;
+    font-size:70px;
 }
 
 #about h2{
     color: #044381;
-    font-weight: 300;
+    font-weight: 200;
     padding-bottom: 0px;
     padding-top: 90px;
     font-size: 30px;
@@ -501,7 +506,7 @@ color: #436A9A;
 }
 .bg-one h3{
     color: #000;
-    font-weight: 400;
+    font-weight: 200;
 
 }
 .cool{
@@ -514,16 +519,24 @@ color: #436A9A;
 
 }
 .umenia{
-    padding-top: 80px;
-    padding-bottom: 200px;
-    color:  #185298;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color:  #fff;
+}
+.umenia2{
+    padding-top: 25px;
+    padding-bottom: 0px;
+    color:  #fff;
 }
 .umenia h3{
-    font-size: 25px;
-    color: #185298;
+    font-size: 60px;
+    color: #00CFEB;
+    padding-left: 10px;
+    font-weight: 300;
 }
 .umenia p{
-    line-height: 20px;
+    line-height: 10px;
+    font-size: 15px;
 }
 .img-strelka{
     width: 100px;
@@ -532,6 +545,13 @@ color: #436A9A;
 }
 .adapt-img{
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.adapt-img2{
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -539,6 +559,17 @@ color: #436A9A;
 .adapt-img img {
   width: 100%; 
   height: auto; 
+  padding: 5px 0;
+}
+
+.adapt-img2 img {
+  width: 100%; 
+  height: auto; 
+  padding: 5px 0;
+}
+
+.5000{
+    width: 300px;
 }
 
 
@@ -613,6 +644,13 @@ color: #436A9A;
     font-size: 16px;
     font-weight: 300;
 }
+#services h2{
+    color: #185298;
+    font-weight: 300;
+    padding-bottom: 100px;
+    padding-top: 0px;
+    font-size: 30px;
+}
 
 
 /*=================================================================
@@ -639,14 +677,14 @@ height:100%;
 ==================================================================*/
 
 #contact-us {
-    padding: 70px 0 0;
+    padding-top: 10px;
     background-image: url(../img/karta.png);
     background-attachment: relative;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 500px;
+    height: 350px;
     text-align: center;
 }
 
@@ -697,10 +735,11 @@ height:100%;
 }
 
 #footer{
-    background-color: #000;
+    background-color:rgba(0, 0, 0, 0.75);
     color: #FFF;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 8px;
 }
 
 
