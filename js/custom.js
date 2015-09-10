@@ -128,7 +128,7 @@ jQuery(function ($) { "use strict";
 		  },
 		  animations : function() {
 			// Count To
-			$(".counters-item [data-to]").each(function() {
+			$(".cool [data-to]").each(function() {
 			  var $this = $(this);
 			  $this.appear(function() {
 				$this.countTo({});
