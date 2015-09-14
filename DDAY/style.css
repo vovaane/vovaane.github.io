@@ -1,0 +1,26 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#flyimage1 {
+  position: absolute;
+  left: -500px;
+  width: 100%;
+  height: 100%;
+}
+
+#flyimage2 {
+  position: absolute;
+  border-radius: 100%;
+  left: -400px;
+  width: 20 px;
+  height: 10 px;
+}
+
+#flyimage3 {
+  position: absolute;
+  left: 200 px;
+  height=40 px;
+  width=20 px;
+}

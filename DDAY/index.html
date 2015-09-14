@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel='stylesheet' href='style.css' />
+
+  <script type="text/javascript" src="script.js">
+  </script>
+  <script type="text/javascript">
+    // Define unique variable names depending on number of flying images (ie:3):
+    var flyimage1, flyimage2, flyimage3
+    
+    function pagestart(){
+    // Using the same variable names as 1), add or delete more of the below lines :
+     flyimage1=new Chip("flyimage1",47,68);
+     flyimage2=new Chip("flyimage2",47,68);
+     flyimage3=new Chip("flyimage3",47,68);
+     flyimage4=new Chip("flyimage4",47,68);
+    
+    // Using the same variable names , add or delete more of the below lines:
+    movechip("flyimage1");
+    movechip("flyimage2");
+    movechip("flyimage3");
+    movechip("flyimage4");
+    }
+    
+    if (window.addEventListener)
+    window.addEventListener("load", pagestart, false)
+    else if (window.attachEvent)
+    window.attachEvent("onload", pagestart)
+    else if (document.getElementById)
+    window.onload=pagestart
+  </script>
+  <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
+</head>
+
+<body>
+
+    <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
+  <img src="http://i.myniceprofile.com/216/21684.gif" alt="Happy Birthday" border="10" width="1200" height="700"></a>
+  <br><a href="http://myniceprofile.com/" />
+
+
+  <DIV ID="flyimage1">
+    <A HREF="http://dynamicdrive.com">
+      <IMG SRC="http://www.gifmix.de/gif.php?bild=ballon-gifs/BALLON58.GIF" BORDER=0>
+    </a>
+  </DIV>
+
+  <DIV ID="flyimage2">
+    <a href="http://dynamicdrive.com">
+      <IMG SRC="http://d1kn32quvsf7z3.cloudfront.net/images/G_birthday_balloonsBear.png" BORDER=0>
+    </a>
+  </DIV>
+
+  <DIV ID="flyimage3">
+    <A HREF="http://dynamicdrive.com">
+      <IMG SRC="http://mandarinchik.net/uploads/posts/2013-09/1379064161_programmer.png" BORDER=0>
+    </a>
+  </DIV>
+  <DIV ID="flyimage4">
+    <a href="" BORDER=0></a>
+  </DIV>
+
+</body>
+
+</html>
