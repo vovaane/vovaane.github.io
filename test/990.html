@@ -1,0 +1,63 @@
+<style>
+#iframe {
+    width : 990px;
+    height : 90px;
+    position : relative;
+}
+
+#iframe.big {
+    width : 990px;
+    height : 250px;
+}
+
+iframe {
+    width : 100%;
+    height : 100%;
+    border : none;
+}
+
+#overlay {    
+    position : absolute;
+    left : 0;
+    top : 0;
+    width : 100%;
+    height : 100%;
+}
+
+#close {
+    display : none;
+}
+
+.big #close {
+    cursor : pointer;
+    display : block;
+    position : absolute;
+    right : 10px;
+    top : 10px;
+    content :;
+    background :transparent;
+    color : white;
+    border-radius : 25%;
+    padding : 8px;
+}
+
+.big #overlay {
+    display : none;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<div id="iframe">
+    <div id="overlay"></div>
+    <div id="close">X</div>
+    <iframe src="/Users/averenkov/Downloads/990x250_990x90_TheScent_Futur_V2/990x90_990x250/990x250_990x90_TheScent_Futur_V2.html" scrolling="no" marginheight="0" marginwidth="0" ></iframe>
+</div>
+
+<script type="text/javascript">
+	$("#overlay").mouseover(function() {
+    $("#iframe").addClass("big");
+});
+
+$("#close").click(function() {
+    $("#iframe").removeClass("big");        
+});
+</script>
