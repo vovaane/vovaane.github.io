@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Sans titre</title>
+<!--Adobe Edge Runtime-->
+    <script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/6.0.0/edge.6.0.0.min.js"></script>
+
+    <style>
+        .edgeLoad-x250 { visibility:hidden; }
+    </style>
+<script>
+   AdobeEdge.loadComposition('990x250_990x90_TheScent_Futur_V2', 'x250', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0px",
+    maxW: "undefined",
+    width: "990px",
+    height: "90px"
+}, {"dom":{}}, {"dom":{}});
+</script>
+<!--Adobe Edge Runtime End-->
+        <script type="text/javascript">
+
+            (function() {
+
+                var logging = true;
+
+                try{
+
+                    function addEventListener(e,func){
+                        if (window.addEventListener){
+                            window.addEventListener(e,func, false);
+                        } else if (window.attachEvent){
+                            window.attachEvent('on'+e,func);
+                        }
+                    }
+
+                    function log(msg){
+                        if (logging && window.console){
+                            console.info('[Test] '+msg);
+                        }
+                    }
+
+                    function warn(msg){
+                        if (window.console){
+                            console.warn('[Test] '+msg);
+                        }
+                    }
+
+
+                    function init(test){
+
+                        function changeContent(){
+                            $('p').eq(0).remove();
+                        }
+
+                        function callMethod(methodName,val1,val2){
+                            if ('parentIFrame' in window) 
+                                    window.parentIFrame[methodName](val1,val2);
+                                else
+                                    warn('window.parentIFrame methods not enabled.')
+                        }
+
+
+                        console.info(test);
+
+                        switch (test){
+                            case 'changeContent':
+                                setInterval(function(){changeContent();},2);
+                                break;
+                            case 'close':
+                                callMethod('close');
+                                break;
+                            case 'pageChange':
+                                location.href = '/base/example/frame.hover.html';
+                                break;
+                            case 'nested':
+                                location.href = 'frame.nested.html';
+                                break;
+                            case 'size':
+                                changeContent();
+                                callMethod('size');
+                                break;
+                            case 'autoResize':
+                                callMethod('setAutoResize',true);
+                                setTimeout(function(){
+                                    changeContent();
+                                    },500); 
+                                break;
+                            case 'size100':
+                                callMethod('size',100);
+                                break;
+                            case 'size200300':
+                                callMethod('size',200,300);
+                                break;
+                            case 'jsTrigger':
+                                changeContent();
+                                callMethod('trigger');
+                                break;
+                            case 'chkHeight':
+                                callMethod('sendMessage',document.body.offsetHeight);
+                                break;
+                            case 'chkBackground':
+                                callMethod('sendMessage',document.body.style.backgroundColor);
+                                break;
+                            case 'chkSendMsg':
+                                callMethod('sendMessage','message: test string');
+                                break;
+                            case 'chkSendObj':
+                                callMethod('sendMessage',{message: 'test object'});
+                                break;
+                            case 'chkGetId':
+                                if ('parentIFrame' in window)
+                                    callMethod('sendMessage',window.parentIFrame.getId());
+                                break;
+                            case 'setHeightCalculationMethod':
+                                if ('parentIFrame' in window){
+                                    parentIFrame.setHeightCalculationMethod('max');
+                                    callMethod('size');
+                                }
+                                break;
+                            case 'width':
+                                $('p').width(3000);
+                                break;
+                            case 'image':
+                                $('p').html('<img src="djb.jpg">');
+                                break;
+                        }
+
+                    }
+
+                    window.iFrameResizer = {
+                        messageCallback: init
+                    }
+                }
+                catch(e){
+                    warn(e);
+                }
+
+            })();
+        </script>
+
+        <script type="text/javascript" src="/base/js/iframeResizer.contentWindow.min.js"></script>
+
+
+	<div id="Stage" class="x250">
+	</div>
+</body>
+</html>
