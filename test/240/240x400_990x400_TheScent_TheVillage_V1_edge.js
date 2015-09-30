@@ -7,7 +7,7 @@
 Symbol.bindElementAction(compId,symbolName,"${ReplayControl}","click",function(sym,e){sym.play("VideoReplay");sym.getSymbol("SonControl").$("SonOFF").hide();sym.getSymbol("SonControl").$("SonON").show();sym.$("TheScent_HB_15_LQ2").show();sym.$("TheScent_HB_15_LQ2")[0].currentTime=0;if(sym.$("TheScent_HB_15_LQ2")[0].paused){sym.$("TheScent_HB_15_LQ2")[0].play();}
 $("video").prop("muted",false);});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${ClickTagSurface}","click",expandStart();function(sym,e){sym.play("VideoPlay");sym.$("TheScent_HB_15_LQ2")[0].currentTime=0;if(sym.$("TheScent_HB_15_LQ2")[0].paused){sym.$("TheScent_HB_15_LQ2")[0].play();}
+Symbol.bindElementAction(compId,symbolName,"${ClickTagSurface}","click",function(sym,e){sym.play("VideoPlay");expandStart();sym.$("TheScent_HB_15_LQ2")[0].currentTime=0;if(sym.$("TheScent_HB_15_LQ2")[0].paused){sym.$("TheScent_HB_15_LQ2")[0].play();}
 sym.$("TheScent_HB_15_LQ2")[0].volume=0;});
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${TheScent_HB_15_LQ2}","click",function(sym,e){if(sym.$("TheScent_HB_15_LQ2")[0].paused){sym.$("TheScent_HB_15_LQ2")[0].play();;sym.getSymbol("PlayPauseControl").$("PauseControl").show();sym.getSymbol("PlayPauseControl").$("PlayControl").hide();sym.play();}else{sym.$("TheScent_HB_15_LQ2")[0].pause();sym.getSymbol("PlayPauseControl").$("PlayControl").show();sym.getSymbol("PlayPauseControl").$("PauseControl").hide();sym.stop();}});
