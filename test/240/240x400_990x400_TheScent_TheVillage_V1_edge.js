@@ -8,10 +8,10 @@ Symbol.bindElementAction(compId,symbolName,"${ReplayControl}","click",function(s
 $("video").prop("muted",false);});
 //Edge binding end
 
-Symbol.bindElementAction(compId,symbolName,"${ClickTagSurface}","click",function(sym,e){sym.play("VideoPlay");sym.$("TheScent_HB_15_LQ2")[0].currentTime=0;if(sym.$("TheScent_HB_15_LQ2")[0].paused){sym.$("TheScent_HB_15_LQ2")[0].play();}
+Symbol.bindElementAction(compId,symbolName,"${ClickTagSurface}","click",function(sym,e){sym.play("VideoPlay");expandStart();sym.$("TheScent_HB_15_LQ2")[0].currentTime=0;if(sym.$("TheScent_HB_15_LQ2")[0].paused){sym.$("TheScent_HB_15_LQ2")[0].play();}
 sym.$("TheScent_HB_15_LQ2")[0].volume=0;});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${TheScent_HB_15_LQ2}","click",function(sym,e){if(sym.$("TheScent_HB_15_LQ2")[0].paused){sym.$("TheScent_HB_15_LQ2")[0].play();expandStart();sym.getSymbol("PlayPauseControl").$("PauseControl").show();sym.getSymbol("PlayPauseControl").$("PlayControl").hide();sym.play();}else{sym.$("TheScent_HB_15_LQ2")[0].pause();sym.getSymbol("PlayPauseControl").$("PlayControl").show();sym.getSymbol("PlayPauseControl").$("PauseControl").hide();sym.stop();}});
+Symbol.bindElementAction(compId,symbolName,"${TheScent_HB_15_LQ2}","click",function(sym,e){if(sym.$("TheScent_HB_15_LQ2")[0].paused){sym.$("TheScent_HB_15_LQ2")[0].play();sym.getSymbol("PlayPauseControl").$("PauseControl").show();sym.getSymbol("PlayPauseControl").$("PlayControl").hide();sym.play();}else{sym.$("TheScent_HB_15_LQ2")[0].pause();sym.getSymbol("PlayPauseControl").$("PlayControl").show();sym.getSymbol("PlayPauseControl").$("PauseControl").hide();sym.stop();}});
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${PlayPauseControl}","click",function(sym,e){if(sym.$("TheScent_HB_15_LQ2")[0].paused){sym.$("TheScent_HB_15_LQ2")[0].play();;sym.play();sym.getSymbol("PlayPauseControl").$("PlayControl").hide();sym.getSymbol("PlayPauseControl").$("PauseControl").show();}else{sym.$("TheScent_HB_15_LQ2")[0].pause();sym.stop();sym.getSymbol("PlayPauseControl").$("PauseControl").hide();sym.getSymbol("PlayPauseControl").$("PlayControl").show();}});
 //Edge binding end
