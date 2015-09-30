@@ -3,8 +3,9 @@
 (function($,Edge,compId){var Composition=Edge.Composition,Symbol=Edge.Symbol;Edge.registerEventBinding(compId,function($){
 //Edge symbol: 'stage'
 
-(function(symbolName){Symbol.bindElementAction(compId,symbolName,"${SkipAnim}","click",function(sym,e){sym.$("ExpandZone").expandStart();sym.$("TheScent_HB_15_LQ2")[0].pause();sym.play("FinalFrame");sym.$("TheScent_HB_15_LQ2").hide();});
+(function(symbolName){Symbol.bindElementAction(compId,symbolName,"${SkipAnim}","click",function(sym,e){sym.$("ExpandBTN").expandStart();sym.$("TheScent_HB_15_LQ2")[0].pause();sym.play("FinalFrame");sym.$("TheScent_HB_15_LQ2").hide();});
 //Edge binding end
+
 Symbol.bindElementAction(compId,symbolName,"${ReplayControl}","click",function(sym,e){sym.play("VideoReplay");sym.getSymbol("SonControl").$("SonOFF").hide();sym.getSymbol("SonControl").$("SonON").show();sym.$("TheScent_HB_15_LQ2").show();sym.$("TheScent_HB_15_LQ2")[0].currentTime=0;if(sym.$("TheScent_HB_15_LQ2")[0].paused){sym.$("TheScent_HB_15_LQ2")[0].play();}
 $("video").prop("muted",false);});
 //Edge binding end
