@@ -21,7 +21,7 @@ Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",4410,function(sym,
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${CloseBTN}","click",function(sym,e){sym.$("TheScent_HB_15_LQ2").hide();expandEnd();sym.$("TheScent_HB_15_LQ2")[0].pause();sym.play("CloseLanding");});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${ClickTAG}","click",function(sym,e){ar_callLink({link:'%reference%'target:'target'})});
+Symbol.bindElementAction(compId,symbolName,"${ClickTAG}","click",function(sym,e){ar_callLink({link:'%reference%',target:'target'})});
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
