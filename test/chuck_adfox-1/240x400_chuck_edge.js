@@ -4,6 +4,7 @@
 //Edge symbol: 'stage'
 (function(symbolName){Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",10000,function(sym,e){sym.play(0);});
 //Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${Rectangle2}","click",function(sym,e){window.open("http://www.adobe.com","_blank");});
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
