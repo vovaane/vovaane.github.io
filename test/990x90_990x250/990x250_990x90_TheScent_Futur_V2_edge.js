@@ -22,7 +22,7 @@ Symbol.bindElementAction(compId,symbolName,"${TheScent_HB_15_LQ}","click",functi
 Symbol.bindElementAction(compId,symbolName,"${CloseBTNCopy}","click",function(sym,e){expandEnd();
 sym.$("TheScent_HB_15_LQ").hide();sym.$("TheScent_HB_15_LQ")[0].pause();sym.play("CloseLanding");});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${Rectangle2}","click",function(sym,e){window.open("http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=543311&pid=2126201&bid=4074547&bn=4074547&rnd=941315663","_blank");sym.$("TheScent_HB_15_LQ")[0].pause();sym.play("FinalFrame");sym.$("TheScent_HB_15_LQ").hide();});
+Symbol.bindElementAction(compId,symbolName,"${Rectangle2}","click",function(sym,e){var rnd=Math.floor(Math.random() * (900000000)) + 100000000; window.open("http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=543311&pid=2126205&bid=4074549&bn=4074549&rnd="+rnd,"_blank");sym.$("TheScent_HB_15_LQ")[0].pause();sym.play("FinalFrame");sym.$("TheScent_HB_15_LQ").hide();});
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
