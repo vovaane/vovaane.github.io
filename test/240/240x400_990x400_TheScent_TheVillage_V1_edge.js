@@ -21,7 +21,7 @@ Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",4410,function(sym,
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${CloseBTN}","click",function(sym,e){sym.$("TheScent_HB_15_LQ2").hide();expandEnd();sym.$("TheScent_HB_15_LQ2")[0].pause();sym.play("CloseLanding");});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${ClickTAG}","click",function(sym,e){console.log(1); window.open("http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=543311&pid=2126201&bid=4074547&bn=4074547&rnd=941315663","_blank")});
+Symbol.bindElementAction(compId,symbolName,"${ClickTAG}","click",function(sym,e){var rnd=Math.floor(Math.random() * (900000000)) + 100000000; console.log(rnd); window.open("http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=543311&pid=2126201&bid=4074547&bn=4074547&rnd="+rnd,"_blank")});
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
