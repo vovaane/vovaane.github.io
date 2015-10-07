@@ -678,7 +678,7 @@ color: #185298;
 .carier-section{
     padding-top: 60px;
     padding-bottom:60px;
-    background: url(../img/carier.jpg); 
+    background: url(http://images.123hdwallpapers.com/20150518/ice-hockey-wallpaper-sports-1280x960.jpg); 
     background-attachment: relative;
     background-position: center center;
     background-repeat: no-repeat;
@@ -687,7 +687,11 @@ color: #185298;
 /*=================================================================
 	Contact
 ==================================================================*/
-
+.backgg{
+    background-color: rgba(255, 255, 255, 0.87);
+    padding: 20px;
+    border-radius: 90px;
+}
 #contact-us {
     padding-top: 10px;
     background-image: url(../img/karta.png);
