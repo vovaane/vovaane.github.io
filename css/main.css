@@ -678,19 +678,34 @@ color: #185298;
 .carier-section{
     padding-top: 60px;
     padding-bottom:60px;
-    background: url(http://images.123hdwallpapers.com/20150518/ice-hockey-wallpaper-sports-1280x960.jpg); 
+    background: url(http://allstarhockeyshop.co.uk/images/depositphotos_4602161_l.jpg); 
     background-attachment: relative;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.carier-section .btn{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    padding: 10px 30px;
+    border-radius: 0;
+    border-color: #000;
+    margin-top: 15px;
+    
+    -webkit-transition: all .5s ease-in 0s;
+       -moz-transition: all .5s ease-in 0s;
+         -o-transition: all .5s ease-in 0s;
+            transition: all .5s ease-in 0s;
 }
 /*=================================================================
 	Contact
 ==================================================================*/
 .backgg{
     background-color: rgba(255, 255, 255, 0.87);
-    padding: 20px;
+    padding:0 80px;
     border-radius: 90px;
+    font-size: 16px;
+    font-weight: 300;
 }
 #contact-us {
     padding-top: 10px;
