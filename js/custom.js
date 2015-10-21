@@ -287,11 +287,12 @@ jQuery(function ($) { "use strict";
 	function initialize() {
 
 		var myLatLng = new google.maps.LatLng(55.7899249, 37.7099948);
+		var myLatLng1 = new google.maps.LatLng(55.7933775, 37.6819173);
 
 		var roadAtlasStyles = [
     {
         "featureType": "water",
-        "elementType": "geometry",
+        "elementType": "geometry.fill",
         "stylers": [
             {
                 "color": "#e9e9e9"
@@ -467,7 +468,7 @@ jQuery(function ($) { "use strict";
 
 		var mapOptions = {
 			zoom: 14,
-			center: myLatLng,
+			center: myLatLng1,
 			disableDefaultUI: true,
 			scrollwheel: false,
 			navigationControl: false,
