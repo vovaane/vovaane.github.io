@@ -178,25 +178,6 @@ h2{
     width: 100%;
 }
 
-.border {
-    border-top: 1px solid #fff;
-    height: 1px;
-    margin: 15px auto 0;
-    position: relative;
-    width: 35%;
-}
-
-.border:before {
-    background-color: #fff;
-    border: 1px ridge #fff;
-    content: "";
-    height: 10px;
-    left: 50%;
-    margin-left: -20px;
-    position: absolute;
-    top: -5px;
-    width: 40px;
-}
 
 .title {
     padding-bottom: 60px;
@@ -661,15 +642,6 @@ color: #185298;
 }
 
 
-/*=================================================================
-	Portfolio section
-==================================================================*/
-
-.show-section{
-    padding-top:  0;
-    width: 100%;
-    height:100%;
-}
 
 /*=================================================================
 	Our skills
@@ -685,7 +657,7 @@ color: #185298;
     background-size: cover;
 }
 #map-canvas {
-    height: 370px;
+    height: 300px;
     width: 100%;
     position: absolute;
 }
@@ -713,13 +685,12 @@ color: #185298;
 }
 #contact-us {
     padding-top: 0px;
-    background-image: url(../img/karta.png);
     background-attachment: relative;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 370px;
+    height: 300px;
     text-align: center;
 }
 
