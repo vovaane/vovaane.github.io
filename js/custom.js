@@ -263,7 +263,7 @@ jQuery(function ($) { "use strict";
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#dedede"
+                "color": "#f5f5f5"
             },
             {
                 "lightness": 21
