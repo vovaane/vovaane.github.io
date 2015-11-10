@@ -25,7 +25,7 @@ jQuery(function ($) { "use strict";
 		cursorborderradius: 0,
 		cursorwidth: "8px",
 		cursorfixedheight: 150,
-		cursorcolor: "blue",
+		cursorcolor: "",
 		zindex: 9999,
 		cursorborder: 0,
 	});
@@ -34,7 +34,25 @@ jQuery(function ($) { "use strict";
 	/* ========================================================================= */
 	/*	Scroll Up / Back to top
 	/* ========================================================================= */
-	
+
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+});
+
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
 
 	/* ========================================================================= */
 	/*	Post image slider
@@ -54,7 +72,7 @@ jQuery(function ($) { "use strict";
 		currentClass: 'current',
 		changeHash: false,
 		scrollSpeed: 1500,
-		scrollThreshold: 0.5,
+		scrollThreshold: 0.9,
 		filter: '',
 		easing: 'easeInOutExpo'
 	});
@@ -352,10 +370,10 @@ jQuery(function ($) { "use strict";
 			center: myLatLng1,
 			disableDefaultUI: true,
 			scrollwheel: false,
-			navigationControl: false,
+			navigationControl: true,
 			mapTypeControl: false,
 			scaleControl: false,
-			draggable: false,
+			draggable: true,
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'roadatlas']
 			}

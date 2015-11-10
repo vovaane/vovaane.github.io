@@ -1,0 +1,762 @@
+                                /*
+Template Name: Meghna Responsive HTML5/CSS3 Portfolio Template
+Author: Muhammad Morshed
+Author URI: http://themeforest.net/user/morsheds
+Description: Meghna Responsive HTML5/CSS3 Portfolio Template
+Version: 1.0
+Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive, html5, css3
+*/
+
+
+/* Table of Content
+==================================================
+	#Home
+	#Navigation
+	#About
+	#Service
+	#Portfolio
+	#Our Team
+	#Pricing
+	#Blog
+	#Contact
+*/
+
+
+/*=================================================================
+	Basic Setup
+==================================================================*/
+html{
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+body {
+    background-color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+a {
+    color: #0C0FB7;
+	
+	-webkit-transition: all .3s ease-in 0s;
+	   -moz-transition: all .3s ease-in 0s;
+		 -o-transition: all .3s ease-in 0s;
+			transition: all .3s ease-in 0s;
+}
+
+iframe {
+    border: 0;
+}
+
+a, a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+a:focus, a:hover {
+    color: #000000;
+}
+
+h1, h2, h4, h5, h6 {
+    font-family: 'Roboto';
+    font-weight: 200;
+}
+h3{
+    font-weight: 300;
+}
+
+h2{
+    letter-spacing: 2px;
+}
+
+.kill-margin-bottom {
+	margin-bottom: 0 !important;
+}
+
+.btn {
+    background-color: rgba(1, 33, 64, 0.98);
+    color: #ffffff;
+    padding: 20px 30px;
+	border-radius: 0;
+    margin-top: 15px;
+	
+	-webkit-transition: all .5s ease-in 0s;
+	   -moz-transition: all .5s ease-in 0s;
+		 -o-transition: all .5s ease-in 0s;
+			transition: all .5s ease-in 0s;
+}
+
+.btn:focus {
+	color: #ddd;
+}
+
+.btn-green {
+    background-color: rgb(38, 181, 207);
+}
+
+.btn-green:focus, 
+.btn-green:hover {
+    background-color:rgb(38, 181, 207);
+	color: #fff;
+}
+
+.btn-transparent {
+	border: 0px solid #4e595f;
+}
+
+.btn-transparent:focus {
+    background-color: rgb(38, 181, 207);
+    border-color: rgb(38, 181, 207);
+}
+
+.btn-transparent:hover {
+    background-color: rgb(38, 181, 207);
+	border: 1px solid transparent;
+    color: #fff;
+}
+
+.form-control {
+	background-color: #2f383d;
+	border-radius: 0;
+	padding: 5px 10px;
+	border: 0 none;
+	color: #ddd;
+}
+
+.form-control:focus {
+	box-shadow: 0 0 0;
+}
+
+.form-control::-webkit-input-placeholder { /*  Chrome, Safari, Opera  */
+   color: #ddd;
+}
+
+.form-control:-moz-placeholder { /* Firefox 18- */
+   color: #ddd;  
+}
+
+.form-control::-moz-placeholder {  /* Firefox 19+ */
+   color: #ddd;  
+}
+
+.form-control:-ms-input-placeholder {  /*  Internet Explorer  */
+   color: #ddd;  
+}
+
+
+#loading-mask {
+    background: #FFFFFF;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 999999999;
+}
+
+.loading-img {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 40%;
+    width: 100%;
+}
+
+
+.title {
+    padding-bottom: 60px;
+}
+
+.title h2 {
+    
+    font-weight: 300;
+    font-size: 38px;
+    color: #fff;
+}
+
+.color {
+    color: rgba(0, 0, 6, 0.76);
+}
+
+.sub-title {
+    padding: 0 0 50px;
+}
+
+.sub-title > h3 {
+    border-left: 3px solid #ddd;
+    border-right: 3px solid #ddd;
+    display: inline-block;
+    padding: 5px 25px;
+    text-transform: uppercase;
+}
+
+.btn.active:focus, .btn:active:focus, .btn:focus {
+    outline: 0;
+}
+.skill-chart1{
+ float: right;
+ padding-right: 300px;
+color: #044381;
+
+}
+.skill-chart{
+    float: left;
+    padding-left: 300px;
+color: #044381;
+}
+
+.skill-chart1 h3{
+    font-size: 70px;
+}
+.skill-chart h3{
+    font-size: 70px;
+}
+
+
+#tech{
+background-image: url(../img/ice-hockey.jpeg);
+background-attachment: fixed !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-one {
+    
+    font-size: 16px;
+    color: #595A5A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.bg-one i{
+    color: #000;
+    line-height: 150px;
+}
+.bg-one span{
+    background-color:;
+    border-radius: 25px;
+    padding: 7px;
+
+}
+
+.wrap-about{
+    background-color: rgba(253, 253, 253, 0.75);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0px;
+    border: 3px solid #5E9DEB;
+}
+
+.bg-one .title{
+    padding-bottom: 20px;
+    color: #FFF;
+}
+
+
+.bg-one1{
+    background-color: #FFFFFF;
+    font-size: 18px;
+    color: #7D7D7D;
+    width: 100%;
+    height: 100%;
+}
+
+
+.parallax-section {
+	background-attachment: fixed !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.center-box{
+    text-align: center;
+}
+
+.slider1 i{
+color: #185298;
+}
+
+/*=================================================================
+	Home Slider
+==================================================================*/
+
+#home {
+    position: relative;
+}
+
+.bord{
+    border-bottom: 10px solid #fff;
+    padding-bottom: 150px;
+}
+
+#slitSlider .carousel-caption {
+	padding: 0;
+    display: table;
+    height: 50%;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 11;
+	background: -webkit-linear-gradient(rgb(0, 3, 6), rgba(0, 55, 109, 0.77) 55%,rgba(255, 255, 255, 0.55),#fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(0, 3, 6), rgba(0, 55, 109, 0.77) 55%,rgba(255, 255, 255, 0.55),#fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(0, 3, 6), rgba(0, 55, 109, 0.77) 55%,rgba(255, 255, 255, 0.55),#fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(0, 3, 6), rgba(0, 55, 109, 0.77) 55%,rgba(255, 255, 255, 0.55),#fff);
+}
+
+#slitSlider .carousel-caption a {
+    font-size: 18px;
+}
+
+#slitSlider .carousel-caption > div {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#slitSlider .carousel-caption h2 {
+    color: #FFF;
+    font-family: Oswald, sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+#slitSlider .carousel-caption h3 {
+    color: #FFF;
+    font-family: Oswald, sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 59px;
+}
+
+
+
+/*=================================================================
+	Navigation
+==================================================================*/
+
+.navbar-inverse {
+	background-color: rgba(255, 255, 255, 0);
+	width: 100%;
+	z-index: 99;
+}
+
+.navbar {
+  border-bottom: 0px solid #5F9EEC;
+  margin-bottom: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.opaque {
+  border-bottom: 0px solid #ffffff;
+  background-color: white;
+  background: rgba(255, 255, 255, 0.85);
+  transition: background-color 1s ease 0s; /* Transition effect to make it fade in (optional) */
+  
+}
+.navbar.opaque .navbar-brand h1 {
+  color:#044381;
+  transition: color 1s ease 0s;
+  visibility: visible;
+}
+.navbar.opaque .navbar-nav > li > a {
+  color: #044381;
+  transition: color 1s ease 0s;
+}
+.navbar.opaque .navbar-nav > li > a:active {
+
+}
+
+
+.navbar-brand {
+	height: auto;
+	padding: 0px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.navbar-brand h1 {
+	margin: 3;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0);
+    font-weight: bolder;
+    visibility: hidden;
+
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 14px 20px;
+
+	-webkit-transition: background .5s ease-in-out 0s;
+	   -moz-transition: background .5s ease-in-out 0s;
+		 -o-transition: background .5s ease-in-out 0s;
+			transition: background .5s ease-in-out 0s;
+            font-family: 'Open Sans', sans-serif;
+            font-weight:;
+            letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-nav > li.current > a {
+    color: #0EB9DA;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color:#B6E6EF;
+}
+.dropdown .pull-right{
+    float:right;
+
+}
+
+.navbar-collapse.collapse {
+    height: auto!important;
+    padding-bottom: 0;
+    padding-left: 30%;
+    overflow: visible!important;
+}
+
+
+/*=================================================================
+	About us section
+==================================================================*/
+#about_us{
+    background-color: #012140;
+}
+#about_us h2{
+    color: #000000;
+}
+#about {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #423A3A;
+    background: url(../img/new.png);
+    background-position: center 260px;
+    background-repeat: no-repeat;
+    background-size:310px;
+    background-color: #fff;
+    font-weight: 300;
+
+}
+.img-new-bg{
+    background: -webkit-linear-gradient(rgba(64, 193, 211, 0.9), #012140); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(64, 193, 211, 0.9), #012140); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(64, 193, 211, 0.9), #012140); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(64, 193, 211, 0.9), #012140); /* Standard syntax (must be last) */
+    width: 100%;
+    height: auto;
+    left: 0px;
+}
+
+#about i{
+    color: #00CFEB;
+    font-size:70px;
+}
+
+#about h2{
+    color: #044381;
+    font-weight: 300;
+    padding-bottom: 0px;
+    padding-top: 90px;
+    font-size: 30px;
+}
+
+.better{
+    padding-top: 60px;
+}
+#about.better h2{
+    padding-top: 100px;
+    color: #ffffff;
+}
+.bg-one h3{
+    color: #000;
+    font-weight: 200;
+
+}
+.cool{
+    color: #ffffff;
+
+}
+.cool h3{
+    font-size: 70px;
+    font-weight: 300;
+
+}
+.umenia{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color:  #fff;
+}
+.umenia2{
+    padding-top: 25px;
+    padding-bottom: 0px;
+    color:  #fff;
+}
+.umenia h3{
+    font-size: 60px;
+    color: #00CFEB;
+    padding-left: 10px;
+    font-weight: 300;
+}
+.umenia p{
+    line-height: 10px;
+    font-size: 15px;
+}
+.img-strelka{
+    width: 100px;
+    height: 100px;
+    padding-top: 50px;
+}
+.adapt-img{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.adapt-img2{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.adapt-img img {
+  width: 100%; 
+  height: auto; 
+  padding: 5px 0;
+  padding-bottom: 30px;
+}
+
+.adapt-img2 img {
+  width: 100%; 
+  height: auto; 
+  padding: 5px 0;
+}
+
+.5000{
+    width: 300px;
+}
+
+
+
+.icon-box {
+	position: relative;
+	width: 200px; 
+	height: 200px;
+	background-color: rgba(255, 255, 255, 0.45);
+	margin: 46.19px auto 60px;
+	padding: 20px 0;
+	border: solid 3px #939598;
+    border-radius: 100px;
+
+	
+	-webkit-transform: translateZ(0px);
+	   -moz-transform: translateZ(0px);
+		-ms-transform: translateZ(0px);
+		 -o-transform: translateZ(0px);
+			transform: translateZ(0px);
+
+	-webkit-transition-duration: 0.3s;
+	   -moz-transition-duration: 0.3s;
+		 -o-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+
+	-webkit-transition-property: transform;
+	   -moz-transition-property: transform;
+		 -o-transition-property: transform;
+			transition-property: transform;
+}
+
+.icon-box:hover {
+	-webkit-transform: translateY(-10px);
+	   -moz-transform: translateY(-10px);
+		-ms-transform: translateY(-10px);
+		 -o-transform: translateY(-10px);
+			transform: translateY(-10px);
+}
+
+
+
+
+
+/*=================================================================
+	Services section
+==================================================================*/
+
+#services {
+    padding: 70px 0 100px;
+}
+
+#services .title {
+    padding-bottom: 25px;
+}
+
+.service-block {
+    padding: 50px 20px;
+    border-right:1px solid rgba(191, 191, 191, 0.38);
+    margin-bottom: 0px;
+}
+
+.service-icon {
+    margin-bottom: 40px;
+}
+
+.service-block h3 {
+	text-transform: uppercase;
+    color: #185298
+}
+#services p{
+    font-size: 16px;
+    font-weight: 300;
+}
+#services h2{
+    color: #185298;
+    font-weight: 300;
+    padding-bottom: 50px;
+    padding-top: 0px;
+    font-size: 30px;
+}
+
+
+
+/*=================================================================
+	Our skills
+==================================================================*/
+
+.carier-section{
+    padding-top: 0px;
+    padding-bottom:0px;
+    background: url(../img/ice.jpeg); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#car{
+    padding-top: 300px;
+}
+#map-canvas {
+    height: 300px;
+    width: 100%;
+    position: absolute;
+}
+
+.carier-section .btn{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    padding: 10px 30px;
+    border-radius: 0;
+    border-color: #000;
+    margin-top: 15px;
+    
+    -webkit-transition: all .5s ease-in 0s;
+       -moz-transition: all .5s ease-in 0s;
+         -o-transition: all .5s ease-in 0s;
+            transition: all .5s ease-in 0s;
+}
+/*=================================================================
+	Contact
+==================================================================*/
+.backgg{
+    padding:0 80px;
+    font-size: 16px;
+    font-weight: 300;
+}
+#contact-us {
+    padding-top: 0px;
+    background-attachment: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.contact-form {
+	margin-bottom: 40px;
+}
+
+.contact-form .form-control {
+	background-color: transparent;
+	border: 1px solid #4e595f;
+	height: 38px;
+}
+
+.contact-form input:hover, 
+.contact-form textarea:hover,
+#contact-submit:hover {
+    border-color: #6CB670;
+}
+
+#contact-submit {
+	border: 1px solid #4e595f;
+	padding: 12px 0;
+	width: 100%;
+	margin: 0;
+}
+
+.contact-form textarea.form-control {
+    padding: 10px;
+    height: 120px;
+}
+
+.contact-info p {
+	margin-bottom: 25px;
+    text-align: center;
+}
+
+.con-info {
+    margin-bottom: 20px;
+}
+
+.con-info i,
+.con-info span {
+    float: center;
+}
+
+.con-info span {
+	margin: -5px 0 0 15px;
+}
+#SkypeButton_Call_iceberg.analytics_1_paraElement img{
+    vertical-align: 0;
+    margin: 0;
+}
+
+#footer{
+    background-color:#000000;
+    color: #FFF;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+
+
