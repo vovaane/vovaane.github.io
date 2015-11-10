@@ -352,7 +352,7 @@ jQuery(function ($) { "use strict";
 			center: myLatLng1,
 			disableDefaultUI: true,
 			scrollwheel: false,
-			navigationControl: false,
+			navigationControl: true,
 			mapTypeControl: false,
 			scaleControl: false,
 			draggable: false,
