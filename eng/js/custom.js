@@ -354,8 +354,8 @@ jQuery(function ($) { "use strict";
 			scrollwheel: false,
 			navigationControl: true,
 			mapTypeControl: false,
-			scaleControl: false,
-			draggable: false,
+			scaleControl: true,
+			draggable: true,
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'roadatlas']
 			}
