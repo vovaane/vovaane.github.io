@@ -97,7 +97,7 @@
                             id: 'Image2',
                             display: 'none',
                             type: 'image',
-                            rect: ['-6px', '100px', '250px', '177px', 'auto', 'auto'],
+                            rect: ['-6px', '99px', '250px', '177px', 'auto', 'auto'],
                             opacity: 1,
                             fill: ["rgba(0,0,0,0)",im+"%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BE%D0%BA.png",'0px','0px']
                         },
@@ -105,9 +105,9 @@
                             id: 'Text8',
                             display: 'none',
                             type: 'text',
-                            rect: ['20px', '331px', '240px', '81px', 'auto', 'auto'],
+                            rect: ['2px', '331px', '240px', '81px', 'auto', 'auto'],
                             text: "\"ПОДАРКИ С ВОЗМОЖНОСТЯМИ\"",
-                            align: "left",
+                            align: "center",
                             font: ['\'Arial Black\', Gadget, sans-serif', [18, "px"], "rgba(255,255,255,1)", "800", "none solid rgb(255, 255, 255)", "normal", "break-word", "normal"]
                         },
                         {
@@ -185,24 +185,34 @@
                             'block'
                         ],
                         [
-                            "eid141",
-                            "left",
-                            5000,
-                            384,
+                            "eid43",
+                            "font-size",
+                            2906,
+                            0,
                             "linear",
-                            "${Image2}",
-                            '-6px',
-                            '1px'
+                            "${Text5}",
+                            '19px',
+                            '19px'
                         ],
                         [
-                            "eid120",
-                            "left",
+                            "eid122",
+                            "font-size",
+                            5475,
+                            0,
+                            "linear",
+                            "${Text8}",
+                            '18px',
+                            '18px'
+                        ],
+                        [
+                            "eid123",
+                            "font-size",
                             12500,
                             0,
                             "linear",
                             "${Text8}",
-                            '20px',
-                            '20px'
+                            '18px',
+                            '18px'
                         ],
                         [
                             "eid127",
@@ -225,14 +235,14 @@
                             'block'
                         ],
                         [
-                            "eid25",
-                            "top",
-                            1000,
-                            664,
+                            "eid141",
+                            "left",
+                            5000,
+                            384,
                             "linear",
-                            "${Text3}",
-                            '-59px',
-                            '17px'
+                            "${Image2}",
+                            '-6px',
+                            '1px'
                         ],
                         [
                             "eid63",
@@ -245,66 +255,6 @@
                             '353px'
                         ],
                         [
-                            "eid139",
-                            "height",
-                            5000,
-                            384,
-                            "linear",
-                            "${Image2}",
-                            '177px',
-                            '168px'
-                        ],
-                        [
-                            "eid169",
-                            "font-size",
-                            5000,
-                            0,
-                            "linear",
-                            "${Text9}",
-                            '35px',
-                            '35px'
-                        ],
-                        [
-                            "eid181",
-                            "top",
-                            5000,
-                            0,
-                            "linear",
-                            "${Text9}",
-                            '21px',
-                            '21px'
-                        ],
-                        [
-                            "eid131",
-                            "top",
-                            13000,
-                            906,
-                            "linear",
-                            "${agyta}",
-                            '401px',
-                            '200px'
-                        ],
-                        [
-                            "eid35",
-                            "top",
-                            2429,
-                            471,
-                            "linear",
-                            "${gift}",
-                            '242px',
-                            '252px'
-                        ],
-                        [
-                            "eid30",
-                            "font-size",
-                            664,
-                            0,
-                            "linear",
-                            "${Text3}",
-                            '35px',
-                            '35px'
-                        ],
-                        [
                             "eid60",
                             "display",
                             5000,
@@ -313,46 +263,6 @@
                             "${gift}",
                             'block',
                             'none'
-                        ],
-                        [
-                            "eid155",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${Text9}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid156",
-                            "display",
-                            5000,
-                            0,
-                            "linear",
-                            "${Text9}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid142",
-                            "top",
-                            5000,
-                            384,
-                            "linear",
-                            "${Image2}",
-                            '119px',
-                            '100px'
-                        ],
-                        [
-                            "eid153",
-                            "top",
-                            7250,
-                            0,
-                            "linear",
-                            "${Image2}",
-                            '100px',
-                            '100px'
                         ],
                         [
                             "eid72",
@@ -385,6 +295,86 @@
                             'block'
                         ],
                         [
+                            "eid181",
+                            "top",
+                            5000,
+                            0,
+                            "linear",
+                            "${Text9}",
+                            '21px',
+                            '21px'
+                        ],
+                        [
+                            "eid131",
+                            "top",
+                            13000,
+                            906,
+                            "linear",
+                            "${agyta}",
+                            '401px',
+                            '200px'
+                        ],
+                        [
+                            "eid139",
+                            "height",
+                            5000,
+                            384,
+                            "linear",
+                            "${Image2}",
+                            '177px',
+                            '168px'
+                        ],
+                        [
+                            "eid30",
+                            "font-size",
+                            664,
+                            0,
+                            "linear",
+                            "${Text3}",
+                            '35px',
+                            '35px'
+                        ],
+                        [
+                            "eid142",
+                            "top",
+                            5000,
+                            384,
+                            "linear",
+                            "${Image2}",
+                            '119px',
+                            '100px'
+                        ],
+                        [
+                            "eid190",
+                            "top",
+                            7250,
+                            11750,
+                            "linear",
+                            "${Image2}",
+                            '100px',
+                            '99px'
+                        ],
+                        [
+                            "eid155",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${Text9}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid156",
+                            "display",
+                            5000,
+                            0,
+                            "linear",
+                            "${Text9}",
+                            'none',
+                            'block'
+                        ],
+                        [
                             "eid164",
                             "opacity",
                             10750,
@@ -393,16 +383,6 @@
                             "${Text10}",
                             '1',
                             '0'
-                        ],
-                        [
-                            "eid59",
-                            "display",
-                            5000,
-                            0,
-                            "linear",
-                            "${Text3}",
-                            'block',
-                            'none'
                         ],
                         [
                             "eid75",
@@ -435,6 +415,56 @@
                             'block'
                         ],
                         [
+                            "eid145",
+                            "width",
+                            5000,
+                            384,
+                            "linear",
+                            "${Image2}",
+                            '250px',
+                            '238px'
+                        ],
+                        [
+                            "eid59",
+                            "display",
+                            5000,
+                            0,
+                            "linear",
+                            "${Text3}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid194",
+                            "left",
+                            12250,
+                            0,
+                            "linear",
+                            "${Text8}",
+                            '0px',
+                            '0px'
+                        ],
+                        [
+                            "eid195",
+                            "left",
+                            12500,
+                            0,
+                            "linear",
+                            "${Text8}",
+                            '0px',
+                            '0px'
+                        ],
+                        [
+                            "eid196",
+                            "left",
+                            13116,
+                            0,
+                            "linear",
+                            "${Text8}",
+                            '0px',
+                            '0px'
+                        ],
+                        [
                             "eid187",
                             "top",
                             5078,
@@ -443,16 +473,6 @@
                             "${Text10}",
                             '285px',
                             '285px'
-                        ],
-                        [
-                            "eid159",
-                            "opacity",
-                            10750,
-                            987,
-                            "linear",
-                            "${Text9}",
-                            '1',
-                            '0'
                         ],
                         [
                             "eid45",
@@ -465,14 +485,24 @@
                             '232px'
                         ],
                         [
-                            "eid145",
-                            "width",
-                            5000,
-                            384,
+                            "eid25",
+                            "top",
+                            1000,
+                            664,
                             "linear",
-                            "${Image2}",
-                            '250px',
-                            '238px'
+                            "${Text3}",
+                            '-59px',
+                            '17px'
+                        ],
+                        [
+                            "eid169",
+                            "font-size",
+                            5000,
+                            0,
+                            "linear",
+                            "${Text9}",
+                            '35px',
+                            '35px'
                         ],
                         [
                             "eid112",
@@ -515,34 +545,24 @@
                             '148px'
                         ],
                         [
-                            "eid43",
-                            "font-size",
-                            2906,
-                            0,
+                            "eid35",
+                            "top",
+                            2429,
+                            471,
                             "linear",
-                            "${Text5}",
-                            '19px',
-                            '19px'
+                            "${gift}",
+                            '242px',
+                            '252px'
                         ],
                         [
-                            "eid122",
-                            "font-size",
-                            5475,
-                            0,
+                            "eid159",
+                            "opacity",
+                            10750,
+                            987,
                             "linear",
-                            "${Text8}",
-                            '18px',
-                            '18px'
-                        ],
-                        [
-                            "eid123",
-                            "font-size",
-                            12500,
-                            0,
-                            "linear",
-                            "${Text8}",
-                            '18px',
-                            '18px'
+                            "${Text9}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid71",
@@ -581,5 +601,5 @@
 
     AdobeEdge.registerCompositionDefn(compId, symbols, fonts, scripts, resources, opts);
 
-    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("fond24_edgeActions.js");
+    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("fond25_edgeActions.js");
 })("EDGE-231929459");
