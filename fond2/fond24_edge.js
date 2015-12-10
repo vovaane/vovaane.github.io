@@ -31,6 +31,7 @@
                             id: 'Image',
                             display: 'block',
                             type: 'image',
+                            tag: 'img',
                             rect: ['24px', '-11px', '192px', '351px', 'auto', 'auto'],
                             opacity: 1,
                             fill: ["rgba(0,0,0,0)",im+"%D0%A4%D0%9E%D0%9D%D0%94.gif",'0px','0px']
@@ -127,8 +128,11 @@
                     }
                 },
                 timeline: {
-                    duration: 13906,
+                    duration: 19000,
                     autoPlay: true,
+                    labels: {
+                        "loop": 870
+                    },
                     data: [
                         [
                             "eid58",
@@ -139,6 +143,16 @@
                             "${Text5}",
                             'block',
                             'none'
+                        ],
+                        [
+                            "eid188",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${Image}",
+                            'block',
+                            'block'
                         ],
                         [
                             "eid61",
@@ -567,5 +581,5 @@
 
     AdobeEdge.registerCompositionDefn(compId, symbols, fonts, scripts, resources, opts);
 
-    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("fond2_edgeActions.js");
+    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("fond24_edgeActions.js");
 })("EDGE-231929459");

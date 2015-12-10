@@ -1,7 +1,7 @@
 
 {
 
-	"HTMLFileName":"fond2.html",
+	"HTMLFileName":"fond24.html",
 	"expanded:images/%D0%A4%D0%9E%D0%9D%D0%94.gif":"nil",
 	"ModelData":"{\
 \"stage\": {\
@@ -22,7 +22,8 @@
 }",
 	"expanded:images/%D1%84%D0%B4%D0%B2%D0%B8%D1%82%D0%B0.jpg":"nil",
 	"pref__general__FilterNonAnimatedElements":"false",
-	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"viewStartMs":"-198.08824291141",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
 	"StageZoomFactor":"100",
 	"symbol_stage":{
 		"element_${Text}":{
@@ -122,15 +123,15 @@
 			"timelineColor":"0x00bda4",
 			"timelineTreeOpened":"true",
 			"animationEnabled":"true"}},
-	"TransitionIdCounter":"188",
+	"TransitionIdCounter":"189",
 	"CompZoomFactor":"100",
-	"viewStartY":"0",
+	"viewStartY":"336",
 	"pixelsPerMs":"0.025241275941026",
 	"expanded:images/gift.png":"nil",
 	"usedBOM":"false",
 	"stage-Default Timeline_mark_ms":"-1",
 	"nextElementColorIndex":"5",
-	"stage-Default Timeline_playhead_ms":"7250",
+	"stage-Default Timeline_playhead_ms":"0",
 	"expanded:images/%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BE%D0%BA.png":"nil",
 	"expanded:images/agyta.jpg":"nil",
 	"expanded:images/%D1%84%D0%B4%D0%B2%D0%B8%D1%82%D0%B02.jpg":"nil"}
