@@ -34,7 +34,7 @@
                             tag: 'img',
                             rect: ['24px', '-11px', '192px', '351px', 'auto', 'auto'],
                             opacity: 1,
-                            fill: ["rgba(0,0,0,0)",im+"%D0%A4%D0%9E%D0%9D%D0%94.gif",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"http://vovaane.github.io/fond2/images/%D0%A4%D0%9E%D0%9D%D0%94.gif",'0px','0px']
                         },
                         {
                             id: 'gift',
@@ -42,7 +42,7 @@
                             type: 'image',
                             rect: ['148px', '242px', '126px', '118px', 'auto', 'auto'],
                             opacity: 1,
-                            fill: ["rgba(0,0,0,0)",im+"gift.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"http://vovaane.github.io/fond2/images/gift.png",'0px','0px']
                         },
                         {
                             id: 'Text3',
@@ -90,7 +90,7 @@
                             type: 'text',
                             rect: ['0px', '285px', '240px', '98px', 'auto', 'auto'],
                             opacity: 1,
-                            text: "чтобы помогать",
+                            text: "чтобы помогать!",
                             align: "center",
                             font: ['FuturaRegular', [45, "px"], "rgba(255,255,255,1)", "400", "none solid rgb(255, 255, 255)", "normal", "break-word", "normal"]
                         },
@@ -100,7 +100,7 @@
                             type: 'image',
                             rect: ['-6px', '99px', '250px', '177px', 'auto', 'auto'],
                             opacity: 1,
-                            fill: ["rgba(0,0,0,0)",im+"%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BE%D0%BA.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"http://vovaane.github.io/fond2/images/%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BE%D0%BA.png",'0px','0px']
                         },
                         {
                             id: 'Text8',
@@ -116,7 +116,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['0px', '200px', '240px', '200px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"agyta.jpg",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"http://vovaane.github.io/fond2/images/agyta.jpg",'0px','0px']
                         }
                     ],
                     style: {
