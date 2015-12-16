@@ -12,7 +12,7 @@ Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",1000,function(sym,
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${startbtn}","click",function(sym,e){sym.play();});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${Rectangle2}","click",function(sym,e){var rnd=Math.floor(Math.random() * (900000000)) + 100000000; window.open("%reference%"+rnd,"_blank")});;
+
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
