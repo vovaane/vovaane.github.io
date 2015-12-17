@@ -3,10 +3,10 @@
 (function (compId) {
 
     "use strict";
-    var im='images/',
-        aud='media/',
-        vid='media/',
-        js='js/',
+    var im='http://vovaane.github.io/new/images/',
+        aud='http://vovaane.github.io/new/media/',
+        vid='http://vovaane.github.io/new/media/',
+        js='http://vovaane.github.io/new/js/',
         fonts = {
         },
         opts = {
@@ -299,5 +299,5 @@
 
     AdobeEdge.registerCompositionDefn(compId, symbols, fonts, scripts, resources, opts);
 
-    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("new%20banner%20font_edgeActions.js");
+    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("http://vovaane.github.io/new/new%20banner%20font_edgeActions.js");
 })("EDGE-32949875");
