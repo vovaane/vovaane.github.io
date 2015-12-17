@@ -1,0 +1,10 @@
+/* font-family: "DaysRegular"; */
+@font-face {
+    font-family: "DaysRegular";
+    src: url("../fonts/DaysRegular/DaysRegular.eot");
+    src: url("../fonts/DaysRegular/DaysRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/DaysRegular/DaysRegular.woff") format("woff"),
+    url("../fonts/DaysRegular/DaysRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
