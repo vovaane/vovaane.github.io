@@ -46,7 +46,7 @@
                             type: 'rect',
                             rect: ['0px', '0px', '236px', '396px', 'auto', 'auto'],
                             fill: ["rgba(192,192,192,0.00)"],
-                            stroke: [2,"rgba(0,0,0,1)","solid"]
+                            stroke: [0,"rgba(164,164,164,1.00)","solid"]
                         },
                         {
                             id: 'Text10',
