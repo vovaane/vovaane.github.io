@@ -4,7 +4,7 @@ body {
 
 .background {
   background: -webkit-linear-gradient(0deg, #eee2ca, #c7b8a2);
-  background: linear-gradient(90deg, #0F1619, #80DCFF);
+  background: linear-gradient(90deg, #efefef, #fff);
   position: absolute;
   top: 0;
   left: 0;
