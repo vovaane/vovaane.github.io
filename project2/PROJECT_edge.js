@@ -3,10 +3,10 @@
 (function (compId) {
 
     "use strict";
-    var im='images/',
-        aud='media/',
-        vid='media/',
-        js='js/',
+    var im='http://vovaane.github.io/project2/images/',
+        aud='http://vovaane.github.io/project2/media/',
+        vid='http://vovaane.github.io/project2/media/',
+        js='http://vovaane.github.io/project2/js/',
         fonts = {
         },
         opts = {
@@ -778,5 +778,5 @@
 
     AdobeEdge.registerCompositionDefn(compId, symbols, fonts, scripts, resources, opts);
 
-    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("PROJECT_edgeActions.js");
+    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("http://vovaane.github.io/project2/PROJECT_edgeActions.js");
 })("EDGE-4902884");
