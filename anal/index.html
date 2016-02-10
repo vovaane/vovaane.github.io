@@ -46,8 +46,8 @@
           <h1 class="Titles-main">This Week vs Last Week</h1>
           <div class="Titles-sub">По пользователям</div>
         </header>
-        <figure class="Chartjs-figure" id="chart-2-container"></figure>
-        <ol class="Chartjs-legend" id="legend-2-container"></ol>
+        <figure class="Chartjs-figure" id="chart-5-container"></figure>
+        <ol class="Chartjs-legend" id="legend-5-container"></ol>
       </div>
     </li>
 <div id="legend-1-container"></div>
@@ -106,8 +106,9 @@ gapi.analytics.ready(function() {
     title.innerHTML = data.property.name + ' (' + data.view.name + ')';
 
     activeUsers.set(data).execute();
-
+    
     renderWeekOverWeekChart(data.ids);
+    renderWeekOverWeekChart2(data.ids);
     renderYearOverYearChart(data.ids);
     renderTopBrowsersChart(data.ids);
     renderTopCountriesChart(data.ids);
@@ -173,7 +174,7 @@ gapi.analytics.ready(function() {
       generateLegend('legend-1-container', data.datasets);
     });
   }
-  function renderWeek(ids) {
+  function renderWeekOverWeekChart2(ids) {
 
     // Adjust `now` to experiment with different days, for testing only...
     var now = moment(); // .subtract(3, 'day');
