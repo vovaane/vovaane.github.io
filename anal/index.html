@@ -34,10 +34,20 @@
       <div class="Chartjs">
         <header class="Titles">
           <h1 class="Titles-main">This Week vs Last Week</h1>
-          <div class="Titles-sub">By sessions</div>
+          <div class="Titles-sub">По просмотрам</div>
         </header>
         <figure class="Chartjs-figure" id="chart-1-container"></figure>
         <ol class="Chartjs-legend" id="legend-1-container"></ol>
+      </div>
+    </li>
+    <li class="FlexGrid-item">
+      <div class="Chartjs">
+        <header class="Titles">
+          <h1 class="Titles-main">This Week vs Last Week</h1>
+          <div class="Titles-sub">По пользователям</div>
+        </header>
+        <figure class="Chartjs-figure" id="chart-7-container"></figure>
+        <ol class="Chartjs-legend" id="legend-7-container"></ol>
       </div>
     </li>
 <div id="legend-1-container"></div>
@@ -112,7 +122,7 @@ gapi.analytics.ready(function() {
     var thisWeek = query({
       'ids': ids,
       'dimensions': 'ga:date,ga:nthDay',
-      'metrics': 'ga:pageviews,ga:users',
+      'metrics': 'ga:pageviews',
       'start-date': moment(now).subtract(1, 'day').day(0).format('YYYY-MM-DD'),
       'end-date': moment(now).format('YYYY-MM-DD')
     });
@@ -120,7 +130,7 @@ gapi.analytics.ready(function() {
     var lastWeek = query({
       'ids': ids,
       'dimensions': 'ga:date,ga:nthDay',
-      'metrics': 'ga:pageviews,ga:users',
+      'metrics': 'ga:pageviews',
       'start-date': moment(now).subtract(1, 'day').day(0).subtract(1, 'week')
           .format('YYYY-MM-DD'),
       'end-date': moment(now).subtract(1, 'day').day(6).subtract(1, 'week')
@@ -163,7 +173,65 @@ gapi.analytics.ready(function() {
       generateLegend('legend-1-container', data.datasets);
     });
   }
+  function renderWeekOverWeekChart2(ids) {
 
+    // Adjust `now` to experiment with different days, for testing only...
+    var now = moment(); // .subtract(3, 'day');
+
+    var thisWeek = query({
+      'ids': ids,
+      'dimensions': 'ga:date,ga:nthDay',
+      'metrics': 'ga:users',
+      'start-date': moment(now).subtract(1, 'day').day(0).format('YYYY-MM-DD'),
+      'end-date': moment(now).format('YYYY-MM-DD')
+    });
+
+    var lastWeek = query({
+      'ids': ids,
+      'dimensions': 'ga:date,ga:nthDay',
+      'metrics': 'ga:users',
+      'start-date': moment(now).subtract(1, 'day').day(0).subtract(1, 'week')
+          .format('YYYY-MM-DD'),
+      'end-date': moment(now).subtract(1, 'day').day(6).subtract(1, 'week')
+          .format('YYYY-MM-DD')
+    });
+
+    Promise.all([thisWeek, lastWeek]).then(function(results) {
+
+      var data1 = results[0].rows.map(function(row) { return +row[2]; });
+      var data2 = results[1].rows.map(function(row) { return +row[2]; });
+      var labels = results[1].rows.map(function(row) { return +row[0]; });
+
+      labels = labels.map(function(label) {
+        return moment(label, 'YYYYMMDD').format('ddd');
+      });
+
+      var data = {
+        labels : labels,
+        datasets : [
+          {
+            label: 'Last Week',
+            fillColor : "rgba(220,220,220,0.5)",
+            strokeColor : "rgba(220,220,220,1)",
+            pointColor : "rgba(220,220,220,1)",
+            pointStrokeColor : "#fff",
+            data : data2
+          },
+          {
+            label: 'This Week',
+            fillColor : "rgba(151,187,205,0.5)",
+            strokeColor : "rgba(151,187,205,1)",
+            pointColor : "rgba(151,187,205,1)",
+            pointStrokeColor : "#fff",
+            data : data1
+          }
+        ]
+      };
+
+      new Chart(makeCanvas('chart-7-container')).Line(data);
+      generateLegend('legend-7-container', data.datasets);
+    });
+  }
 
   function renderYearOverYearChart(ids) {
 
