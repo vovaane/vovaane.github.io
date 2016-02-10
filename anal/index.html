@@ -247,7 +247,7 @@ gapi.analytics.ready(function() {
   function renderYearOverYearChart(ids) {
 
     // Adjust `now` to experiment with different days, for testing only...
-    var now = moment("20140101", "YYYYMMDD").fromNow(); // .subtract(3, 'day');
+    var now = moment().subtract(365, 'days').calendar(); // .subtract(3, 'day');
 
     var thisYear = query({
       'ids': ids,
