@@ -17,24 +17,20 @@
 <style type="text/css">
 .gapi-analytics-data-chart .google-visualization-table{border:0;z-index:0}.gapi-analytics-data-chart .google-visualization-table-table{background:#fff;border-collapse:collapse;border-spacing:0;font:inherit;cursor:default;width:100%!important}.gapi-analytics-data-chart .google-visualization-table-table *{font:inherit;vertical-align:inherit}.gapi-analytics-data-chart .google-visualization-table-sortind{color:silver;display:inline-block;font:1em/0 Arial,sans-serif;margin:0 0 0 .5em;padding:0}.gapi-analytics-data-chart .google-visualization-table-td-bool,.gapi-analytics-data-chart .google-visualization-table-td-center,.gapi-analytics-data-chart .google-visualization-table-td-number{text-align:right}.gapi-analytics-data-chart .gapi-analytics-data-chart-styles-table-tr-odd{background:#f8f8f8}.gapi-analytics-data-chart .gapi-analytics-data-chart-styles-table-tr-over{background-color:#f0f0f0}.gapi-analytics-data-chart .gapi-analytics-data-chart-styles-table-tr-sel{background-color:#ffffc0}.gapi-analytics-data-chart .gapi-analytics-data-chart-styles-table-tr-even:last-child,.gapi-analytics-data-chart .gapi-analytics-data-chart-styles-table-tr-odd:last-child{border-bottom:1px solid #e8e8e8}.gapi-analytics-data-chart .gapi-analytics-data-chart-styles-table-th{border:0;border-bottom:1px solid #a8a8a8;font-weight:700;padding:.6em 1em;text-align:left;white-space:nowrap}.gapi-analytics-data-chart .gapi-analytics-data-chart-styles-table-td{border:0;border-left:1px solid #e8e8e8;padding:.6em 1em}.gapi-analytics-data-chart .gapi-analytics-data-chart-styles-table-td:first-child{border-left:0} </style>
 </head>
+<body>
   <div class="Dashboard Dashboard--full">
-  <header class="Dashboard-header">
-    <ul class="FlexGrid">
-      <li class="FlexGrid-item">
-        <div class="Titles">
-          <h1 class="Titles-main" id="view-name">Select a View</h1>
-          <div class="Titles-sub">Various visualizations</div>
-        </div>
-      </li>
-      <li class="FlexGrid-item FlexGrid-item--fixed">
-        <div id="active-users-container"></div>
-      </li>
-    </ul>
-    <div id="view-selector-container"></div>
-  </header>
 
-  <ul class="FlexGrid FlexGrid--halves">
-    <li class="FlexGrid-item">
+<div id="embed-api-auth-container"></div>
+<div id="view-selector-container"></div>
+<div id="active-users-container"></div>
+<h3 id="view-name"></h3>
+<style>
+  div[id^="chart"] {
+    width: 500px;
+    height: 300px;
+  }
+</style>
+<li class="FlexGrid-item">
       <div class="Chartjs">
         <header class="Titles">
           <h1 class="Titles-main">This Week vs Last Week</h1>
@@ -44,46 +40,20 @@
         <ol class="Chartjs-legend" id="legend-1-container"></ol>
       </div>
     </li>
-    <li class="FlexGrid-item">
-      <div class="Chartjs">
-        <header class="Titles">
-          <h1 class="Titles-main">This Year vs Last Year</h1>
-          <div class="Titles-sub">By users</div>
-        </header>
-        <figure class="Chartjs-figure" id="chart-2-container"></figure>
-        <ol class="Chartjs-legend" id="legend-2-container"></ol>
-      </div>
-    </li>
-    <li class="FlexGrid-item">
-      <div class="Chartjs">
-        <header class="Titles">
-        <h1 class="Titles-main">Top Browsers</h1>
-        <div class="Titles-sub">By pageview</div>
-      </header>
-        <figure class="Chartjs-figure" id="chart-3-container"></figure>
-        <ol class="Chartjs-legend" id="legend-3-container"></ol>
-      </div>
-    </li>
-    <li class="FlexGrid-item">
-      <div class="Chartjs">
-        <header class="Titles">
-          <h1 class="Titles-main">Top Countries</h1>
-          <div class="Titles-sub">By sessions</div>
-        </header>
-        <figure class="Chartjs-figure" id="chart-4-container"></figure>
-        <ol class="Chartjs-legend" id="legend-4-container"></ol>
-      </div>
-    </li>
-  </ul>
+<div id="legend-1-container"></div>
+<div id="chart-2-container"></div>
+<div id="legend-2-container"></div>
+<div id="chart-3-container"></div>
+<div id="legend-3-container"></div>
+<div id="chart-4-container"></div>
+<div id="legend-4-container"></div>
 </div>
-</div>
-
+</body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 <script src="https://ga-dev-tools.appspot.com/public/javascript/embed-api/components/view-selector2.js"></script>
 <script src="https://ga-dev-tools.appspot.com/public/javascript/embed-api/components/date-range-selector.js"></script>
 <script src="https://ga-dev-tools.appspot.com/public/javascript/embed-api/components/active-users.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 
 <script>
