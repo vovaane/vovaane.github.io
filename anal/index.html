@@ -124,7 +124,7 @@ gapi.analytics.ready(function() {
       'ids': ids,
       'dimensions': 'ga:date,ga:nthDay',
       'metrics': 'ga:pageviews',
-      'start-date': moment(now).subtract(0, 'day').day(0).format('YYYY-MM-DD'),
+      'start-date': moment(now).subtract(1, 'day').day(0).format('YYYY-MM-DD'),
       'end-date': moment(now).format('YYYY-MM-DD')
     });
 
@@ -132,9 +132,9 @@ gapi.analytics.ready(function() {
       'ids': ids,
       'dimensions': 'ga:date,ga:nthDay',
       'metrics': 'ga:pageviews',
-      'start-date': moment(now).subtract(0, 'day').day(0).subtract(0, 'week')
+      'start-date': moment(now).subtract(1, 'day').day(0).subtract(1, 'week')
           .format('YYYY-MM-DD'),
-      'end-date': moment(now).subtract(0, 'day').day(7).subtract(0, 'week')
+      'end-date': moment(now).subtract(1, 'day').day(6).subtract(1, 'week')
           .format('YYYY-MM-DD')
     });
 
@@ -153,7 +153,7 @@ gapi.analytics.ready(function() {
         datasets : [
           {
             label: 'Last Week',
-            fillColor : "rgba(220,260,240,0.5)",
+            fillColor : "rgba(100,100,100,0.5)",
             strokeColor : "rgba(220,220,220,1)",
             pointColor : "rgba(220,220,220,1)",
             pointStrokeColor : "#fff",
