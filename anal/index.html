@@ -112,7 +112,7 @@ gapi.analytics.ready(function() {
     var thisWeek = query({
       'ids': ids,
       'dimensions': 'ga:date,ga:nthDay',
-      'metrics': 'ga:sessions',
+      'metrics': 'ga:pageviews,ga:users',
       'start-date': moment(now).subtract(1, 'day').day(0).format('YYYY-MM-DD'),
       'end-date': moment(now).format('YYYY-MM-DD')
     });
@@ -120,7 +120,7 @@ gapi.analytics.ready(function() {
     var lastWeek = query({
       'ids': ids,
       'dimensions': 'ga:date,ga:nthDay',
-      'metrics': 'ga:sessions',
+      'metrics': 'ga:pageviews,ga:users',
       'start-date': moment(now).subtract(1, 'day').day(0).subtract(1, 'week')
           .format('YYYY-MM-DD'),
       'end-date': moment(now).subtract(1, 'day').day(6).subtract(1, 'week')
