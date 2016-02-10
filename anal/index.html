@@ -124,7 +124,7 @@ gapi.analytics.ready(function() {
       'ids': ids,
       'dimensions': 'ga:date,ga:nthDay',
       'metrics': 'ga:pageviews',
-      'start-date': moment(now).subtract(1, 'day').day(0).format('YYYY-MM-DD'),
+      'start-date': moment(now).subtract(0, 'day').day(0).format('YYYY-MM-DD'),
       'end-date': moment(now).format('YYYY-MM-DD')
     });
 
