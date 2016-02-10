@@ -173,7 +173,7 @@ gapi.analytics.ready(function() {
       generateLegend('legend-1-container', data.datasets);
     });
   }
-  function renderWeekOverWeek(ids) {
+  function renderWeekOverWeekChart2(ids) {
 
     // Adjust `now` to experiment with different days, for testing only...
     var now = moment(); // .subtract(3, 'day');
@@ -228,7 +228,7 @@ gapi.analytics.ready(function() {
         ]
       };
 
-      new Chart(makeCanvas('chart-7-container')).Line(data);
+      new Chart2(makeCanvas('chart-7-container')).Line(data);
       generateLegend('legend-7-container', data.datasets);
     });
   }
