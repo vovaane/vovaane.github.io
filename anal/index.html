@@ -188,7 +188,8 @@ gapi.analytics.ready(function() {
   function renderWeekOverWeekChart2(ids) {
 
     // Adjust `now` to experiment with different days, for testing only...
-    var now = moment().locale("ru"); // .subtract(3, 'day');
+    var now = moment();
+    moment.lang('ru'); // .subtract(3, 'day');
 
     var thisWeek = query({
       'ids': ids,
