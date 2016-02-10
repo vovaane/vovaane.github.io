@@ -156,7 +156,7 @@ gapi.analytics.ready(function() {
       var labels = results[1].rows.map(function(row) { return +row[0]; });
 
       labels = labels.map(function(label) {
-        return moment(label, 'YYYYMMDD').moment.lang('ru');.format('ddd');
+        return moment(label, 'YYYYMMDD').format('ddd');
       });
 
       var data = {
