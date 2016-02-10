@@ -123,7 +123,7 @@ gapi.analytics.ready(function() {
     renderTopBrowsersChart(data.ids);
     renderTopCountriesChart(data.ids);
   });
-  moment.locale ()
+
 
 
   function renderWeekOverWeekChart(ids) {
@@ -156,7 +156,7 @@ gapi.analytics.ready(function() {
       var labels = results[1].rows.map(function(row) { return +row[0]; });
 
       labels = labels.map(function(label) {
-        return moment(label, 'YYYYMMDD').locale("ru")format('ddd');
+        return moment(label, 'YYYYMMDD').format('ddd');
       });
 
       var data = {
@@ -215,7 +215,7 @@ gapi.analytics.ready(function() {
       var labels = results[1].rows.map(function(row) { return +row[0]; });
 
       labels = labels.map(function(label) {
-        return moment(label, 'YYYYMMDD').format('dddd');
+        return moment(label, 'YYYYMMDD').locale("ru").format('dddd');
       });
 
       var data = {
