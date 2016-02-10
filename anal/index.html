@@ -76,7 +76,7 @@ gapi.analytics.ready(function() {
 
   var activeUsers = new gapi.analytics.ext.ActiveUsers({
     container: 'active-users-container',
-    pollingInterval: 1
+    pollingInterval: 5
   });
 
   activeUsers.once('success', function() {
