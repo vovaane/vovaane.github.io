@@ -19,26 +19,64 @@
 </head>
 <body>
   <div class="Dashboard Dashboard--full">
+  <header class="Dashboard-header">
+    <ul class="FlexGrid">
+      <li class="FlexGrid-item">
+        <div class="Titles">
+          <h1 class="Titles-main" id="view-name">Select a View</h1>
+          <div class="Titles-sub">Various visualizations</div>
+        </div>
+      </li>
+      <li class="FlexGrid-item FlexGrid-item--fixed">
+        <div id="active-users-container"></div>
+      </li>
+    </ul>
+    <div id="view-selector-container"></div>
+  </header>
 
-<div id="embed-api-auth-container"></div>
-<div id="view-selector-container"></div>
-<div id="active-users-container"></div>
-<h3 id="view-name"></h3>
-<style>
-  div[id^="chart"] {
-    width: 500px;
-    height: 300px;
-  }
-</style>
-
-<div id="chart-1-container"></div>
-<div id="legend-1-container"></div>
-<div id="chart-2-container"></div>
-<div id="legend-2-container"></div>
-<div id="chart-3-container"></div>
-<div id="legend-3-container"></div>
-<div id="chart-4-container"></div>
-<div id="legend-4-container"></div>
+  <ul class="FlexGrid FlexGrid--halves">
+    <li class="FlexGrid-item">
+      <div class="Chartjs">
+        <header class="Titles">
+          <h1 class="Titles-main">This Week vs Last Week</h1>
+          <div class="Titles-sub">By sessions</div>
+        </header>
+        <figure class="Chartjs-figure" id="chart-1-container"></figure>
+        <ol class="Chartjs-legend" id="legend-1-container"></ol>
+      </div>
+    </li>
+    <li class="FlexGrid-item">
+      <div class="Chartjs">
+        <header class="Titles">
+          <h1 class="Titles-main">This Year vs Last Year</h1>
+          <div class="Titles-sub">By users</div>
+        </header>
+        <figure class="Chartjs-figure" id="chart-2-container"></figure>
+        <ol class="Chartjs-legend" id="legend-2-container"></ol>
+      </div>
+    </li>
+    <li class="FlexGrid-item">
+      <div class="Chartjs">
+        <header class="Titles">
+        <h1 class="Titles-main">Top Browsers</h1>
+        <div class="Titles-sub">By pageview</div>
+      </header>
+        <figure class="Chartjs-figure" id="chart-3-container"></figure>
+        <ol class="Chartjs-legend" id="legend-3-container"></ol>
+      </div>
+    </li>
+    <li class="FlexGrid-item">
+      <div class="Chartjs">
+        <header class="Titles">
+          <h1 class="Titles-main">Top Countries</h1>
+          <div class="Titles-sub">By sessions</div>
+        </header>
+        <figure class="Chartjs-figure" id="chart-4-container"></figure>
+        <ol class="Chartjs-legend" id="legend-4-container"></ol>
+      </div>
+    </li>
+  </ul>
+</div>
 </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
