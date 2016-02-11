@@ -189,7 +189,7 @@ gapi.analytics.ready(function() {
 
     // Adjust `now` to experiment with different days, for testing only...
     var now = moment();
-    moment.lang('ru'); // .subtract(3, 'day');
+    moment.locale('ru'); // .subtract(3, 'day');
 
     var thisWeek = query({
       'ids': ids,
