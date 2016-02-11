@@ -70,7 +70,7 @@
         <ol class="Chartjs-legend" id="legend-7-container"></ol>
       </div>
     </li>
-    <li class="FlexGrid-item">
+
 <div id="chart-2-container"></div>
 <div id="legend-2-container"></div>
 <div id="chart-3-container"></div>
@@ -407,14 +407,13 @@ gapi.analytics.ready(function() {
         ]
       };
 
-      new Chart(makeCanvas('chart-7-container')).Bar(data);
-      generateLegend('legend-7-container', data.datasets);
+      new Chart(makeCanvas('chart-2-container')).Bar(data);
+      generateLegend('legend-2-container', data.datasets);
     })
     .catch(function(err) {
       console.error(err.stack);
     })
   }
-  
 
 
   function renderTopBrowsersChart(ids) {
