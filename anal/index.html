@@ -60,6 +60,16 @@
         <ol class="Chartjs-legend" id="legend-2-container"></ol>
       </div>
     </li>
+    <li class="FlexGrid-item">
+      <div class="Chartjs">
+        <header class="Titles">
+          <h1 class="Titles-main">This Year vs Last Year</h1>
+          <div class="Titles-sub">По пользователям</div>
+        </header>
+        <figure class="Chartjs-figure" id="chart-7-container"></figure>
+        <ol class="Chartjs-legend" id="legend-7-container"></ol>
+      </div>
+    </li>
 
 <div id="chart-2-container"></div>
 <div id="legend-2-container"></div>
@@ -120,6 +130,7 @@ gapi.analytics.ready(function() {
     renderWeekOverWeekChart(data.ids);
     renderWeekOverWeekChart2(data.ids);
     renderYearOverYearChart(data.ids);
+    renderYearOverYearChart2(data.ids);
     renderTopBrowsersChart(data.ids);
     renderTopCountriesChart(data.ids);
   });
@@ -246,7 +257,7 @@ gapi.analytics.ready(function() {
     });
   }
 
-  function renderYearOverYearChart(ids) {
+  function renderYearOverYearChart2(ids) {
 
     // Adjust `now` to experiment with different days, for testing only...
     var now = moment(); // .subtract(3, 'day');
@@ -319,6 +330,84 @@ gapi.analytics.ready(function() {
 
       new Chart(makeCanvas('chart-2-container')).Bar(data);
       generateLegend('legend-2-container', data.datasets);
+    })
+    .catch(function(err) {
+      console.error(err.stack);
+    })
+  }
+  unction renderYearOverYearChart(ids) {
+
+    // Adjust `now` to experiment with different days, for testing only...
+    var now = moment(); // .subtract(3, 'day');
+
+    var thisYear = query({
+      'ids': ids,
+      'dimensions': 'ga:month,ga:nthMonth',
+      'metrics': 'ga:pageviews',
+      'start-date': moment(now).date(1).month(0).format('YYYY-MM-DD'),
+      'end-date': moment(now).format('YYYY-MM-DD')
+    });
+
+    var lastYear = query({
+      'ids': ids,
+      'dimensions': 'ga:month,ga:nthMonth',
+      'metrics': 'ga:pageviews',
+      'start-date': moment(now).subtract(1, 'year').date(1).month(0)
+          .format('YYYY-MM-DD'),
+      'end-date': moment(now).date(1).month(0).subtract(1, 'day')
+          .format('YYYY-MM-DD')
+    });
+
+    var last2Year = query({
+      'ids': ids,
+      'dimensions': 'ga:month,ga:nthMonth',
+      'metrics': 'ga:pageviews',
+      'start-date': moment(now).subtract(2, 'year').date(1).month(0)
+          .format('YYYY-MM-DD'),
+      'end-date': moment(now).date(1).month(0).subtract(1, 'day').subtract(1, 'year')
+          .format('YYYY-MM-DD')
+    });
+
+    Promise.all([thisYear, lastYear, last2Year]).then(function(results) {
+      var data1 = results[0].rows.map(function(row) { return +row[2]; });
+      var data2 = results[1].rows.map(function(row) { return +row[2]; });
+      var data3 = results[2].rows.map(function(row) { return +row[2]; });
+      var labels = ['Jan','Feb','Mar','Apr','May','Jun',
+                'Jul','Aug','Sep','Oct','Nov','Dec'];
+
+      for (var i = 0, len = labels.length; i < len; i++) {
+        if (data1[i] === undefined) data1[i] = null;
+        if (data2[i] === undefined) data2[i] = null;
+        if (data3[i] === undefined) data3[i] = null;
+      }
+
+      var data = {
+        labels : labels,
+        datasets : [
+          {
+            label: '2014',
+            fillColor : "rgba(216,199,114,0.82)",
+            strokeColor : "rgba(216,199,114,1)",
+            data : data3
+          },
+          {
+            label: '2015',
+            fillColor : "rgba(151,187,205,0.5)",
+            strokeColor : "rgba(151,187,205,1)",
+            data : data2
+          },
+          {
+            label: 'This Year',
+            fillColor : "rgba(216, 114, 114, 0.82)",
+            strokeColor : "rgba(216, 114, 114, 1)",
+            data : data1
+          },
+          
+        ]
+      };
+
+      new Chart(makeCanvas('chart-7-container')).Bar(data);
+      generateLegend('legend-7-container', data.datasets);
     })
     .catch(function(err) {
       console.error(err.stack);
