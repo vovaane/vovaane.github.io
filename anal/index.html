@@ -54,7 +54,7 @@
       <div class="Chartjs">
         <header class="Titles">
           <h1 class="Titles-main">This Year vs Last Year</h1>
-          <div class="Titles-sub">По пользователям</div>
+          <div class="Titles-sub">По просмтрам</div>
         </header>
         <figure class="Chartjs-figure" id="chart-2-container"></figure>
         <ol class="Chartjs-legend" id="legend-2-container"></ol>
@@ -254,7 +254,7 @@ gapi.analytics.ready(function() {
     var thisYear = query({
       'ids': ids,
       'dimensions': 'ga:month,ga:nthMonth',
-      'metrics': 'ga:users',
+      'metrics': 'ga:pageviews',
       'start-date': moment(now).date(1).month(0).format('YYYY-MM-DD'),
       'end-date': moment(now).format('YYYY-MM-DD')
     });
@@ -272,7 +272,7 @@ gapi.analytics.ready(function() {
     var last2Year = query({
       'ids': ids,
       'dimensions': 'ga:month,ga:nthMonth',
-      'metrics': 'ga:users',
+      'metrics': 'ga:pageviews',
       'start-date': moment(now).subtract(2, 'year').date(1).month(0)
           .format('YYYY-MM-DD'),
       'end-date': moment(now).date(1).month(0).subtract(1, 'day')
