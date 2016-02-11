@@ -459,9 +459,9 @@ gapi.analytics.ready(function() {
     });
 
     Promise.all([thisYear, lastYear, last2Year]).then(function(results) {
-      var data1 = results[0]/30*7.rows.map(function(row) { return +row[2]; });
-      var data2 = results[1]/30*7.rows.map(function(row) { return +row[2]; });
-      var data3 = results[2]/30*7.rows.map(function(row) { return +row[2]; });
+      var data1 = results[0].rows.map(function(row) { return +row[2]; })/30*7;
+      var data2 = results[1].rows.map(function(row) { return +row[2]; })/30*7;
+      var data3 = results[2].rows.map(function(row) { return +row[2]; })/30*7;
       var labels = ['Jan','Feb','Mar','Apr','May','Jun',
                 'Jul','Aug','Sep','Oct','Nov','Dec'];
 
