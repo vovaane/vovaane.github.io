@@ -33,7 +33,7 @@
                             type: 'video',
                             tag: 'video',
                             rect: ['-510px', '-101px', '1339px', '766px', 'auto', 'auto'],
-                            autoplay: 'autoplay',
+                           
                             source: ["http://vovaane.github.io/adidas/a102002_H264_8Mbit_1920x1080.mp4"],
                             preload: 'auto'
                         }
