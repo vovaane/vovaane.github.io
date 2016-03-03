@@ -13,6 +13,18 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {
       
       
+      Symbol.bindElementAction(compId, symbolName, "${a102002_H264_8Mbit_1920x1080}", "click", function(sym, e) {
+         // insert code for mouse click here
+         // Play a video track 
+         sym.$("a102002_H264_8Mbit_1920x1080")[0].play();
+         
+         // Play a video track 
+         sym.$("a102002_H264_8Mbit_1920x1080")[0].play();
+         
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 

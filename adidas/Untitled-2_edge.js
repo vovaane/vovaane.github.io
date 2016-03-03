@@ -5,7 +5,8 @@
     "use strict";
     var im='images/',
         aud='media/',
-        vid='http://vovaane.github.io/adidas/media/',
+        vid='
+        media/',
         js='js/',
         fonts = {
         },
