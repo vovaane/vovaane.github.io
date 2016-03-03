@@ -5,8 +5,8 @@
     "use strict";
     var im='images/',
         aud='media/',
-        vid='media/',
-        js='js/',
+        vid='http://vovaane.github.io/adidas/media/',
+        js='http://vovaane.github.io/adidas/js/',
         fonts = {
         },
         opts = {
@@ -58,5 +58,5 @@
 
     AdobeEdge.registerCompositionDefn(compId, symbols, fonts, scripts, resources, opts);
 
-    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("Untitled-2_edgeActions.js");
+    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("http://vovaane.github.io/adidas/Untitled-2_edgeActions.js");
 })("EDGE-309737808");
