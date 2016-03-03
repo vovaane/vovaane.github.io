@@ -1,0 +1,44 @@
+
+{
+
+	"viewStartMs":"3176.4591500163",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+\
+   }},\
+\"Down-level\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"symbol_stage":{
+		"dummyStageParentWidth":"320px",
+		"element_${Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"defaultStageParentWidth":"320px",
+		"dummyStageParentHeight":"570px",
+		"defaultStageParentHeight":"570px",
+		"element_${a102002_H264_8Mbit_1920x1080}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767"}},
+	"HTMLFileName":"Untitled-2.html",
+	"CompZoomFactor":"100",
+	"StageZoomFactor":"50",
+	"mediagroup_media/a102002_H264_8Mbit_1920x1080.mp4":"a102002_H264_8Mbit_1920x1080",
+	"stage-Default Timeline_mark_ms":"-1",
+	"pixelsPerMs":"0.2",
+	"usedBOM":"false",
+	"nextElementColorIndex":"3",
+	"stage-Default Timeline_playhead_ms":"5200",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"expanded:media/a102002_H264_8Mbit_1920x1080.mp4":"false",
+	"viewStartY":"0"}
