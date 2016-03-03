@@ -6,7 +6,7 @@
     var im='images/',
         aud='media/',
         vid='http://vovaane.github.io/adidas/media/',
-        js='http://vovaane.github.io/adidas/js/',
+        js='js/',
         fonts = {
         },
         opts = {
@@ -33,7 +33,7 @@
                             tag: 'video',
                             rect: ['-510px', '-101px', '1339px', '766px', 'auto', 'auto'],
                             autoplay: 'autoplay',
-                            source: [vid+"a102002_H264_8Mbit_1920x1080.mp4"],
+                            source: ["http://vovaane.github.io/adidas/a102002_H264_8Mbit_1920x1080.mp4"],
                             preload: 'auto'
                         }
                     ],
