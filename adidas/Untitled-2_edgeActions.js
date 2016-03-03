@@ -25,6 +25,15 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${a102002_H264_8Mbit_1920x1080}", "touchmove", function(sym, e) {
+         // insert code to be run when a user drags an object (for touch devices only)
+         // Play a video track 
+         sym.$("a102002_H264_8Mbit_1920x1080")[0].play();
+         
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
