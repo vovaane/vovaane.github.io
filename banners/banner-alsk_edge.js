@@ -4,7 +4,6 @@
 //Edge symbol: 'stage'
 (function(symbolName){Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",0,function(sym,e){});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${link}","click",function(sym,e){window.open("http://www.alaskaman.ru/");});
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
