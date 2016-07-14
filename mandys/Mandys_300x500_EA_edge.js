@@ -1,0 +1,11 @@
+
+(function(compId){var _=null,y=true,n=false,x1='6.0.0',x8='rgba(0,17,143,0.00)',x3='6.0.0.400',x2='5.0.0',e12='${foto12}',x4='rgba(0,0,0,0)',e11='${foto3}',x9='rgba(255,255,255,1)',g='image',e10='${foto2}',o='opacity',i='none';var g6='http://vovaane.github.io/mandys/foto2.jpg',g5='http://vovaane.github.io/mandys/foto1.jpg',g7='http://vovaane.github.io/mandys/foto3.jpg';var im='',aud='',vid='',js='',fonts={},opts={'gAudioPreloadPreference':'auto','gVideoPreloadPreference':'auto'},resources=[],scripts=[],symbols={"stage":{v:x1,mv:x2,b:x3,stf:i,cg:i,rI:n,cn:{dom:[{id:'foto1',t:g,r:['0px','0px','300px','500px','auto','auto'],f:[x4,im+g5,'0px','0px']},{id:'foto2',t:g,r:['0px','0px','300px','500px','auto','auto'],o:'0.000000',f:[x4,im+g6,'0px','0px']},{id:'foto3',t:g,r:['0px','0px','300px','500px','auto','auto'],o:'0.000000',f:[x4,im+g7,'0px','0px']},{id:'foto12',t:g,r:['0px','0px','300px','500px','auto','auto'],o:'0.000000',f:[x4,im+g5,'0px','0px']},{id:'btnMain',t:'ellipse',r:['0px','0px','300px','500px','auto','auto'],cu:'pointer',br:["50%","50%","50%","50%"],o:'0.85',f:[x8],s:[0,"rgb(0, 0, 0)",i]}],style:{'${Stage}':{isStage:true,r:['null','null','300px','500px','auto','auto'],overflow:'hidden',f:[x9]}}},tt:{d:7500,a:y,l:{"Label 1":0},data:[["eid23",o,0,0,"linear",e10,'0.000000','0.000000'],["eid4",o,2000,500,"linear",e10,'0.000000','1'],["eid22",o,0,0,"linear",e11,'0.000000','0.000000'],["eid19",o,4500,500,"linear",e11,'0.000000','1'],["eid21",o,0,0,"linear",e12,'0.000000','0.000000'],["eid16",o,7000,500,"linear",e12,'0.000000','1']]}}};AdobeEdge.registerCompositionDefn(compId,symbols,fonts,scripts,resources,opts);})("EDGE-57334574");
+(function($,Edge,compId){var Composition=Edge.Composition,Symbol=Edge.Symbol;Edge.registerEventBinding(compId,function($){
+//Edge symbol: 'stage'
+(function(symbolName){Symbol.bindElementAction(compId,symbolName,"${btnMain}","click",function(sym,e){callClick();});
+//Edge binding end
+Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",7500,function(sym,e){sym.play();sym.play(label1);});
+//Edge binding end
+})("stage");
+//Edge symbol end:'stage'
+})})(AdobeEdge.$,AdobeEdge,"EDGE-57334574");
