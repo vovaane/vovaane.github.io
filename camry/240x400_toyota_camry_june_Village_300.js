@@ -1936,12 +1936,6 @@ p.nominalBounds = new cjs.Rectangle(-3,0,231,166);
 (lib._240x400_toyota_camry_june_Village_300 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_0 = function() {
-		this.btnMain.addEventListener( "click", function() {
-		        window.callClick();
-		} );
-	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(733));
