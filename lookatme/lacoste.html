@@ -1,63 +1,35 @@
+ <script src="http://www.youtube.com/player_api"></script> 
+    <a href="%reference%" target="%target%"><div id='banner_2' style='border:1px solid #000;position: relative; width: 320px; height: 550px;background:url(%user1%)'><div id="player" style="padding-top:150px;"></div></div></a> 
+  <script type="text/javascript">
+    var player;
 
-    <script src="/html.js"></script>      
-    <script type="text/javascript" charset="utf-8" src="edge.6.0.0.min.js"></script>
-    <style>
-        .edgeLoad-EDGE-12298371 { visibility:hidden; }
-    </style>
-<script>
-   AdobeEdge.loadComposition('300x500', 'EDGE-12298371', {
-    scaleToFit: "none",
-    centerStage: "none",
-    minW: "0px",
-    maxW: "undefined",
-    width: "300px",
-    height: "500px"
-}, {"dom":{}}, {"dom":{}});
-</script>
-<!--Adobe Edge Runtime End-->
+    function onYouTubePlayerAPIReady() {
+      player = new YT.Player('player', {
+          playerVars: {
+              'autoplay': 0,
+              'controls': 1,
+              'autohide': 1,
+              'wmode': 'opaque',
+              'showinfo': 0,
+              'loop': 1,
+              'mute': 1,
+                            'rel': 0,
+              //'start': 7,
+              //'end': 110,
+              'playlist': 'PL2088CA8zEZbyqgswdmDKtq_506xZBFJ-'
+          },
+          height: '180',
+          width: '320',
+          videoId: 'eDhQdyFS0Bk',
+          events: {
+              'onReady': onPlayerReady
+          }
+      });
 
-	<div id="Stage" class="EDGE-12298371">
-	
-        <div id="Stage_Rectangle3" class="edgeLoad-EDGE-12298371"></div>
-        <div id="Stage_gora_1Copy3" class="edgeLoad-EDGE-12298371">
-            <div id="Stage_gora_1Copy3_el_blueCopy"></div>
-            <div id="Stage_gora_1Copy3_el_blue"></div>
-            <div id="Stage_gora_1Copy3_el_red"></div>
-            <div id="Stage_gora_1Copy3_gora3"></div>
-        </div>
-        <div id="Stage_gora_1Copy2" class="edgeLoad-EDGE-12298371">
-            <div id="Stage_gora_1Copy2_el_blueCopy"></div>
-            <div id="Stage_gora_1Copy2_el_blue"></div>
-            <div id="Stage_gora_1Copy2_el_red"></div>
-            <div id="Stage_gora_1Copy2_gora3"></div>
-        </div>
-        <div id="Stage_gora_2Copy" class="edgeLoad-EDGE-12298371">
-            <div id="Stage_gora_2Copy_el_red2"></div>
-            <div id="Stage_gora_2Copy_el_blue2"></div>
-            <div id="Stage_gora_2Copy_gora4"></div>
-        </div>
-        <div id="Stage_final" class="edgeLoad-EDGE-12298371"></div>
-        <div id="Stage_line_anim" class="edgeLoad-EDGE-12298371">
-            <div id="Stage_line_anim_line"></div>
-        </div>
-        <div id="Stage_croc_anim" class="edgeLoad-EDGE-12298371">
-            <div id="Stage_croc_anim_croco_game"></div>
-            <div id="Stage_croc_anim_mountain"></div>
-        </div>
+    }
 
-        <div id="Stage_croco_game3" class="edgeLoad-EDGE-12298371"></div>
-        <div id="Stage_txt2" class="edgeLoad-EDGE-12298371"></div>
-        <div id="Stage_Text" class="edgeLoad-EDGE-12298371"><p style="margin: 0px;">​</p></div>
-        <div id="Stage_txt1" class="edgeLoad-EDGE-12298371"></div>
-        <div id="Stage_FINAL_TXT" class="edgeLoad-EDGE-12298371"></div>
-        <div id="Stage_BUYBTN" class="edgeLoad-EDGE-12298371"></div>
-        <div id="Stage_Rectangle" class="edgeLoad-EDGE-12298371"></div>
-        <a href="%reference%" target="%target%">
-        <div id="Stage__300x500_frame" class="edgeLoad-EDGE-12298371"></div>
-    </a>
-        
-        <div id="Stage_Rectangle2" class="edgeLoad-EDGE-12298371"></div>
+    function onPlayerReady(event) {
+      event.target.mute();
+    }
 
-        <div id="Stage_jupmbtn" class="edgeLoad-EDGE-12298371"></div>
-        <div id="Stage_startbtn" class="edgeLoad-EDGE-12298371"></div>
-    </div>
+  </script>
