@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emirates_RU_Dubai_300x500</title>
+    <meta name="ad.size" content="width=300, height=500">
+    <meta charset="UTF-8">
+
+    <!-- user1 = main.css -->
+    <!-- user2 = http://content.adriver.ru/html.js -->
+    
+    <link rel="stylesheet" href="main.css"/>
+    <script src=""></script>
+</head>
+<body>
+	<div id="repeat-wrapper">
+        <div id="repeat-button"></div>
+    </div>
+    <a href="%reference%" target="%target%">
+        <div class="content" id="content">
+            <div class="bg" id="bg-1"></div>
+            <div class="bg" id="bg-2"></div>
+            <div class="bg" id="bg-3"></div>
+            <div class="bg" id="bg-4"></div>
+            <div id="cta">
+                <div class="copy" id="copy-cta"></div>
+            </div>
+            <div id="logo"></div>
+            <div id="ht"></div>
+            <div class="copy" id="copy-1"></div>
+            <div class="copy" id="copy-2"></div>
+            <div class="copy" id="copy-3"></div>
+            <div class="copy" id="copy-4"></div>
+            <div class="copy" id="copy-final"></div>
+            <div id="price-holder">
+                <span class="price" id="price-text"></span>
+                <span class="price" id="price"></span>
+            </div>
+            <div class="terms" id="terms-1"></div>
+    	</div>
+    </a>
+    <!-- If Dynamic put DoubleClick Code here -->
+
+    <script type="text/javascript">
+    (function () {
+    	var content = document.getElementById('content');
+
+        var bg1 = document.getElementById('bg-1');
+        var bg2 = document.getElementById('bg-2');
+        var bg3 = document.getElementById('bg-3');
+        var bg4 = document.getElementById('bg-4');
+
+        var logo = document.getElementById('logo');
+        var ht = document.getElementById('ht');
+        var terms1 = document.getElementById('terms1');
+
+        var copy1 = document.getElementById('copy-1');
+        var copy2 = document.getElementById('copy-2');
+        var copy3 = document.getElementById('copy-3');
+        var copy4 = document.getElementById('copy-4');
+
+        var copyFinal = document.getElementById('copy-final');
+
+        var terms1 = document.getElementById('terms-1');
+
+        var repeatWrapper = document.getElementById('repeat-wrapper');
+        var repeatButton = document.getElementById('repeat-button');
+
+        var cta = document.getElementById('cta');
+        var copyCTA = document.getElementById('copy-cta');
+
+        var priceText = document.getElementById('price-text');
+        var priceValue = document.getElementById('price');
+        var priceHolder = document.getElementById('price-holder');
+
+        var elems = [bg1, bg2, bg3, bg4, logo, ht, copy1, copy2, copy3, copy4, copyFinal, terms1, repeatWrapper, repeatButton, cta, copyCTA, priceText, priceValue, priceHolder];
+
+        var t1,t2,t3,t4,t5,t6;
+
+        function hasClass(elem, className) {
+            return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+        }
+        function addClass(elem, className) {
+            if (!hasClass(elem, className)) {
+                elem.className += ' ' + className;
+            }
+        }
+        function removeClass(elem, className) {
+            var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+            if (hasClass(elem, className)) {
+                while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+                    newClass = newClass.replace(' ' + className + ' ', ' ');
+                }
+                elem.className = newClass.replace(/^\s+|\s+$/g, '');
+            }
+        }
+        function Timer(callback, delay) {
+            var timerId, start, remaining = delay;
+            this.pause = function() {
+                window.clearTimeout(timerId);
+                remaining -= new Date() - start;
+            };
+            this.resume = function() {
+                start = new Date();
+                window.clearTimeout(timerId);
+                timerId = window.setTimeout(callback, remaining);
+            };
+            this.stop = function() {
+                window.clearTimeout(timerId);
+            }
+            this.resume();
+        }
+        function pauseTimers(){
+			t1.pause();
+            t2.pause();
+            t3.pause();
+            t4.pause();
+            t5.pause();
+            t6.pause();
+        }
+        function resumeTimers(){
+            t1.resume();
+            t2.resume();
+            t3.resume();
+            t4.resume();
+            t5.resume();
+            t6.resume();
+        }
+        function pauseCss() {
+            for (var i=0;i<elems.length;i++){
+                elems[i].style.webkitAnimationPlayState="paused";
+                elems[i].style.animationPlayState="paused";
+            }
+        }
+        function resumeCss() {
+            for (var i=0;i<elems.length;i++){
+                elems[i].style.webkitAnimationPlayState="running";
+                elems[i].style.animationPlayState="running";
+            }
+        }
+        function visibilityExpanded() {
+            if (document.hidden) {     
+                    pauseTimers();
+                    pauseCss();
+                } else {
+                    resumeTimers();
+                    resumeCss();
+                } 
+        }
+        function run(){
+            t1 = new Timer(function(){
+                addClass(bg1, 'bg-anim');
+                addClass(copy1, 'slide-right-left');
+            }, 100);
+            t2 = new Timer(function(){
+                removeClass(bg1, 'bg-anim');
+                addClass(bg1, 'opacity-out');
+                addClass(bg2, 'bg-anim');
+                addClass(copy2, 'slide-right-left');
+            }, 2900);
+            t3 = new Timer(function(){
+                removeClass(bg2, 'bg-anim');
+                addClass(bg2, 'opacity-out');
+                addClass(bg3, 'bg-anim');
+                addClass(copy3, 'slide-right-left');
+            }, 5700);
+            t4 = new Timer(function(){
+                removeClass(bg3, 'bg-anim');
+                addClass(bg3, 'opacity-out');
+                addClass(bg4, 'bg-anim-final');
+                addClass(copy4, 'slide-right');
+            }, 8500);
+            t5 = new Timer(function(){
+                addClass(cta, 'cta-anim');
+                addClass(logo, 'slide-up');
+            }, 9500);
+            t6 = new Timer(function(){
+                addClass(ht, 'opacity-in');
+                addClass(terms1, 'opacity-in-terms');
+                addClass(repeatWrapper, 'repeat-anim');
+            }, 10000);
+        }
+        function init(){
+            // If dynamic setup elements from feed here
+            run();
+
+            document.addEventListener("visibilitychange", visibilityExpanded, false);
+            repeatWrapper.addEventListener('click', function(){
+                removeClass(copy1, 'slide-right-left');
+                removeClass(copy2, 'slide-right-left');
+                removeClass(copy3, 'slide-right-left');
+                removeClass(bg3, 'opacity-out');
+                removeClass(bg2, 'opacity-out');
+                removeClass(copy4, 'slide-right');
+                removeClass(bg4, 'bg-anim-final');
+                removeClass(bg1, 'opacity-out');
+                removeClass(logo, 'slide-up');
+                removeClass(ht, 'opacity-in');
+                removeClass(terms1, 'opacity-in-terms');
+                removeClass(priceHolder, 'opacity-in');
+                removeClass(cta, 'cta-anim');
+                removeClass(repeatWrapper, 'repeat-anim');
+				setTimeout(function(){
+					run();
+				}, 0);
+            }, false);
+        };
+        init();
+    })();
+    </script>
+</body>
+</html>
