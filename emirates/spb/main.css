@@ -16,7 +16,7 @@ p{
     cursor: pointer;
 }
 #cta{
-    background: url(cta.png) no-repeat;
+    background: url(http://vovaane.github.io/emirates/spb/cta.png) no-repeat;
     background-size: cover;
     left: 20px;
     top: 123px;
@@ -36,7 +36,7 @@ p{
     line-height: 17px;
 }
 #ht{
-    background: url(ht.png) no-repeat;
+    background: url(http://vovaane.github.io/emirates/spb/ht.png) no-repeat;
     left: 86px;
     top: 382px;
     width: 129px;
@@ -46,7 +46,7 @@ p{
     opacity: 0;
 }
 #logo{
-    background: url(logo.png) no-repeat;
+    background: url(http://vovaane.github.io/emirates/spb/logo.png) no-repeat;
     position: absolute;
     left: 114px;
     top: 407px;
@@ -65,29 +65,29 @@ p{
     top: 0;
 }
 #bg-1{
-    background: url(bg-1.jpg) no-repeat;
+    background: url(http://vovaane.github.io/emirates/spb/bg-1.jpg) no-repeat;
     width: 320px;
     height: 500px;
 }
 #bg-2{
-    background: url(bg-2.jpg) no-repeat;
+    background: url(http://vovaane.github.io/emirates/spb/bg-2.jpg) no-repeat;
     width: 320px;
     height: 500px;
 }
 #bg-3{
-    background: url(bg-3.jpg) no-repeat;
+    background: url(http://vovaane.github.io/emirates/spb/bg-3.jpg) no-repeat;
     width: 320px;
     height: 500px;
 }
 #bg-4{
-    background: url(bg-4.jpg) no-repeat;
+    background: url(http://vovaane.github.io/emirates/spb/bg-4.jpg) no-repeat;
     width: 320px;
     height: 500px;
         -webkit-transform: translateY(-20px);
             transform: translateY(-20px);
 }
 #copy-1 {
-  background-image: url("copy-1.png");
+  background-image: url("http://vovaane.github.io/emirates/spb/copy-1.png");
   position: absolute;
   left: 19px;
   top: 40px;
@@ -99,7 +99,7 @@ p{
 }
 
 #copy-2{
-  background-image: url("copy-2.png");
+  background-image: url("http://vovaane.github.io/emirates/spb/copy-2.png");
   position: absolute;
   left: 21px;
   top: 34px;
@@ -111,7 +111,7 @@ p{
 }
 
 #copy-3{
-  background-image: url("copy-3.png");
+  background-image: url("http://vovaane.github.io/emirates/spb/copy-3.png");
   position: absolute;
   left: 16px;
   top: 40px;
@@ -122,7 +122,7 @@ p{
   transform: translateX(300px);
 }
 #copy-4{
-  background-image: url("copy-4.png");
+  background-image: url("http://vovaane.github.io/emirates/spb/copy-4.png");
   position: absolute;
   left: 20px;
   top: 34px;
@@ -150,7 +150,7 @@ p{
     opacity: 0;
 }
 #terms-1{
-  background-image: url("terms-1.png");
+  background-image: url("http://vovaane.github.io/emirates/spb/terms-1.png");
   position: absolute;
   left: 18px;
   top: 163px;
@@ -204,7 +204,7 @@ p{
     transform: translateY(-200px);
 }
 #repeat-button {
-    background: url(arrow.svg) no-repeat;
+    background: url(http://vovaane.github.io/emirates/spb/arrow.svg) no-repeat;
     background-size: cover;
     position: absolute;
     width: 16px;
