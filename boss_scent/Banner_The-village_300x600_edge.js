@@ -8,7 +8,7 @@ Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",5750,function(sym,
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${SkipControl}","click",function(sym,e){sym.$("video")[0].pause();sym.play("Finvideo");sym.$("video").hide();});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${ReplayControl}","click",function(sym,e){sym.lastframe=false;sym.getSymbol("SonControl").$("SonOn").hide();sym.getSymbol("SonControl").$("SonOff").show();sym.getSymbol("PlayStopControl").$("StopControl").show();sym.getSymbol("PlayStopControl").$("PlayControl").hide();sym.$("video").show();sym.$("video")[0].currentTime=0;if(sym.$("video")[0].paused){sym.$("video")[0].play();}
+Symbol.bindElementAction(compId,symbolName,"${ReplayControl}","click",function(sym,e){sym.lastframe=false;sym.getSymbol("SonControl").$("SonOff").hide();sym.getSymbol("SonControl").$("SonOff").show();sym.getSymbol("PlayStopControl").$("StopControl").show();sym.getSymbol("PlayStopControl").$("PlayControl").hide();sym.$("video").show();sym.$("video")[0].currentTime=0;if(sym.$("video")[0].paused){sym.$("video")[0].play();}
 sym.$("video")[0].muted=true;sym.play("videoStart");});
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${video-centerer}","click",function(sym,e){if(sym.$("video")[0].paused){sym.$("video")[0].play();sym.getSymbol("PlayStopControl").$("StopControl").show();sym.getSymbol("PlayStopControl").$("PlayControl").hide();sym.play();}else{sym.$("video")[0].pause();sym.getSymbol("PlayStopControl").$("PlayControl").show();sym.getSymbol("PlayStopControl").$("StopControl").hide();sym.stop();}});
@@ -36,7 +36,7 @@ Symbol.bindElementAction(compId,symbolName,"${StopControl}","click",function(sym
 //Edge symbol: 'SonControl'
 (function(symbolName){Symbol.bindElementAction(compId,symbolName,"${SonOff}","click",function(sym,e){sym.$("SonOff").hide();sym.$("SonOn").show();sym.$("video")[0].muted=true;});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${SonOn}","click",function(sym,e){sym.$("SonOff").show();sym.$("SonOn").hide();sym.$("video")[0].muted=true;});
+Symbol.bindElementAction(compId,symbolName,"${SonOff}","click",function(sym,e){sym.$("SonOff").show();sym.$("SonOff").hide();sym.$("video")[0].muted=true;});
 //Edge binding end
 })("SonControl");
 //Edge symbol end:'SonControl'
