@@ -185,11 +185,11 @@
 
 setInterval(function(){
 
-	$.getJSON('https://graph.facebook.com/v2.8/?ids={post_id_goes_here}&fields=reactions.type(LIKE).limit(0).summary(total_count).as(reactions_like),reactions.type(LOVE).limit(0).summary(total_count).as(reactions_love)&access_token={application_access_token_goes_here},function(res){
+	$.getJSON('https://graph.facebook.com/v2.8/?ids={1074596769319879}&fields=reactions.type(LIKE).limit(0).summary(total_count).as(reactions_like),reactions.type(LOVE).limit(0).summary(total_count).as(reactions_love)&access_token={4af9c290f20a22021e8f2fc43d618f13},function(res){
 		
-		th.text(0 + res['{post_id_goes_here}'].reactions_love.summary.total_count);
+		th.text(0 + res['{1074596769319879}'].reactions_love.summary.total_count);
 
-		hh.text(0 + res['{post_id_goes_here}'].reactions_like.summary.total_count);
+		hh.text(0 + res['{1074596769319879}'].reactions_like.summary.total_count);
 
 		setInterval(function(){
 
