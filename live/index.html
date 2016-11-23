@@ -100,7 +100,7 @@
 	<div id="wrap">
 		<div class="cover">
 			<div class="title">
-				<h1>КТО ВСОСЕТ <br> ????</h1>
+				<h1>КТО ВСОСЕТ <br> </h1>
 			</div>
 			<div>
 				<div class="hilary">
@@ -109,7 +109,7 @@
 					</div>
 					<div class="meta">
 						<img src="tup.png" alt="" class="icon">
-						<div class="ch">0</div>
+						<div class="ch">15</div>
 						<div class="v">Голоса</div>
 					</div>
 				</div>
@@ -119,7 +119,7 @@
 					</div>
 					<div class="meta">
 						<img src="h.png" alt="" class="icon">
-						<div class="ct">0</div>
+						<div class="ct">15</div>
 						<div class="v">Голоса</div>
 					</div>
 				</div>
@@ -185,11 +185,11 @@
 
 setInterval(function(){
 
-	$.getJSON('https://graph.facebook.com/v2.8/?ids={1074596769319879}&fields=reactions.type(LIKE).limit(0).summary(total_count).as(reactions_like),reactions.type(LOVE).limit(0).summary(total_count).as(reactions_love)&access_token={EAAPRVw62S8cBAFBcnye5yNhhZBZBFzK6GZADqY5ZCtxBRhZANer6fDMeXIY7x3EB5gCnzmmDiwmml9JMlvo6nqflnfMR5lNMdil9NDGVMKEn27pOS9qb2tc8e4fVat7D9SrXqcNjn1RRUlolV00tY5xFsfHujcMFvUztSg0xDkgZDZD},function(res){
+	$.getJSON('https://graph.facebook.com/v2.8/?ids={post_id_goes_here}&fields=reactions.type(LIKE).limit(0).summary(total_count).as(reactions_like),reactions.type(LOVE).limit(0).summary(total_count).as(reactions_love)&access_token={application_access_token_goes_here},function(res){
 		
-		th.text(0 + res['{1074596769319879}'].reactions_love.summary.total_count);
+		th.text(0 + res['{post_id_goes_here}'].reactions_love.summary.total_count);
 
-		hh.text(0 + res['{1074596769319879}'].reactions_like.summary.total_count);
+		hh.text(0 + res['{post_id_goes_here}'].reactions_like.summary.total_count);
 
 		setInterval(function(){
 
