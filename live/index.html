@@ -191,7 +191,21 @@ setInterval(function(){
 
 		hh.text(0 + res['1194942860542607'].reactions_like.summary.total_count);
 
-		setInterval(10000);
+		setInterval(function(){
+
+			th.text(parseInt(th.text()) + 0);
+
+		},
+
+		setInterval(function(){
+
+			hh.text(parseInt(hh.text()) + 0);
+
+		},	
+
+		console.log(res);
+	});
+}, 10000);
 </script>
 
 </body>
