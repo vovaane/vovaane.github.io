@@ -15,8 +15,7 @@ Symbol.bindElementAction(compId,symbolName,"${video-centerer}","click",function(
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${ClickTag}","click",function(sym,e){sym.play("Finvideo");var rnd=Math.floor(Math.random() * (900000000)) + 100000000; window.open("http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=602448&pid=2442923&bid=4693678&bn=4693678&rnd="+rnd,"_blank");});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${ClickTag_Video}","click",function(sym,e){try{sym.$("video")[0].pause();sym.$("video").hide();}
-catch(error){};sym.play("Finvideo");var rnd=Math.floor(Math.random() * (900000000)) + 100000000; window.open("http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=602448&pid=2442923&bid=4693678&bn=4693678&rnd="+rnd,"_blank");});
+
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
@@ -34,7 +33,7 @@ Symbol.bindElementAction(compId,symbolName,"${StopControl}","click",function(sym
 //=========================================================
 
 //Edge symbol: 'SonControl'
-(function(symbolName){Symbol.bindElementAction(compId,symbolName,"${SonOff}","click",function(sym,e){sym.$("SonOff").hide();sym.$("SonOn").show();sym.$("video")[0].muted=true;});
+(function(symbolName){Symbol.bindElementAction(compId,symbolName,"${SonOff}","click",function(sym,e){sym.$("SonOff").hide();sym.$("SonOff").show();sym.$("video")[0].muted=true;});
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${SonOff}","click",function(sym,e){sym.$("SonOff").show();sym.$("SonOff").hide();sym.$("video")[0].muted=true;});
 //Edge binding end
