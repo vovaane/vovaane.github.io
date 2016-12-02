@@ -1,0 +1,60 @@
+<!-- Google, 2016-10-27 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>300x500_lam_cpsh_allied</title>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=500">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<script type="text/javascript" src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"></script>
+<script type="text/javascript" src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2015.11.26_54e1c3722102182bb133912ad4442e19_min.js"></script>
+<style type="text/css">
+body { overflow: hidden; }
+#canvas { cursor: pointer; }
+</style>
+
+
+<script src="http://vovaane.github.io/cpsh/300x500_lam_cpsh_allied.js"></script>
+<script>
+
+var canvas, stage, exportRoot;
+function init() {
+
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	exportRoot = new lib._300x500_lam_cpsh_allied();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+	stage.enableMouseOver();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+
+	for(var a=document.getElementsByTagName("script"),b=0;b<a.length;b++){var c=a[b].getAttribute("src");if(null!=c&&-1<c.search("code.createjs.com")){document.body.innerHTML='<div style="padding:20px;color:#ff0000;font-family:\'Arial\">Remove this tag from html code:<br><code>&lt;script src="https://code.createjs.com/createjs-2015.11.26.min.js"&gt;&lt;/script&gt;</code></div>';break}};
+}
+
+
+</script>
+<script type="text/javascript">
+var clickTag = "http://www.google.com"; </script>
+</head>
+<body onload="init();" style="background-color:#ffffff;margin:0px;">
+    <a href="%reference%" targey="%target%">
+      <canvas id="canvas" width="300" height="500" style="background-color:#FFFFFF"></canvas>
+    </a>
+</body>
+</html>
