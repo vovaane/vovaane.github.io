@@ -2,18 +2,38 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Dripping Paint</title>
+  <title>Elena Charobay</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  //animate scrolling charobay button
+$(document).ready(function (){
+$("#button").click(function(){
+  $('html, body') .animate ({
+    scrollTop:$("#section-one").offset().top
+  }, 1000);
+ });
+ });
+  </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body> 
 	<div class="caption">
 	<div class="title-text"> Helena Charobay
 	</div>
-	<div class="button">
+	<div class="button" id="button">
 		click to kaif
 	</div>
 	</div>
 <canvas id="drip" width="400" height="400"></canvas>
+<div class="container" id="section-one">
+  <div class="top">
+    <p>Lazy Fest</p>
+  </div>
+  <a href="https://www.behance.net/elena541c868" target="_blank">
+  <div class="button" id="button-project">see project</div>
+  </a>
+</div>
     <script src="js/index.js"></script>
 </body>
 </html>
