@@ -2,7 +2,8 @@ body {
   margin:0;
   padding:0;
   background:hsl(0,0%,7%);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 2px;
 
 
   color: #ffffff;
@@ -29,21 +30,22 @@ a:hover {
     text-align: center;
 	position: absolute;
 	z-index: 1000;
-	font-size: 60px;
+	font-size: 80px;
+	letter-spacing: 2px;
 	opacity: 0.9;
 	margin: -40px -210px ;
 
 }
 .title-text{
 	padding-bottom: 30px;
-	  font-family: 'Open-Sans'
+    font-family: 'Amatic SC', cursive;
 }
 .button{
 	padding: 10px 0;
 	font-size: 20px;
 	z-index: 1000;
-	border: 2px solid #ffffff;
-
+	border-top: 0px solid #ffffff;
+	cursor: pointer;
 }
 .container{
 	width: 100%;
