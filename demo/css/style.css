@@ -38,11 +38,13 @@ div#fashion {
 
 }
 
+
 header {
   position: absolute;
   width: 100%;
   top:30%;
   text-align: center;
+  z-index: 1000;
   color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -100,12 +102,16 @@ h2 {
   font-weight: 100;
 }
 .pattern {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-    background : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAANklEQVQYV2NkIAIwEqHGh5AiHwYGhi2EFIEtwqUIbALMKdgUoSjAZxKKf5BNwjAB3TqcCkAKAaYMBVYChd7+AAAAAElFTkSuQmCC);
+  z-index: 100;
+  background : url(1.png);
+  background-position: center;
+  background-size: cover;
+    
 
 }
 div#about{
