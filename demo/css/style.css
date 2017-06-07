@@ -1,0 +1,123 @@
+@font-face {
+  font-family: Moderne Sans;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/moderne_sans.woff2);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  background-size: cover;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+div#fashion {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top:30%;
+  text-align: center;
+  color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+header.sticky{
+  position: fixed;
+  text-align: center;
+  top:0;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+}
+header.sticky > img{
+  position: absolute;
+  left: 5rem;
+  height: 3rem;
+}
+
+
+header:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+h1 {
+  font-family: Moderne Sans, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  letter-spacing: .5rem;
+}
+h1.sticky{
+  font-family: Moderne Sans, sans-serif;
+  text-align: left;
+  font-size: 2rem;
+  width: 100%;
+  letter-spacing: .5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 2rem;
+}
+
+h2 {
+  font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
+  font-size: 8vmin;
+  text-align: center;
+  margin: 2rem 3rem 0;
+  mix-blend-mode: overlay;
+  color: #fff;
+  font-weight: 100;
+}
+.pattern {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    background : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAANklEQVQYV2NkIAIwEqHGh5AiHwYGhi2EFIEtwqUIbALMKdgUoSjAZxKKf5BNwjAB3TqcCkAKAaYMBVYChd7+AAAAAElFTkSuQmCC);
+
+}
+div#about{
+  margin-top: 100px;
+  min-height: 110vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          background:#fff;
