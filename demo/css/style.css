@@ -42,7 +42,7 @@ div#fashion {
 header {
   position: absolute;
   width: 100%;
-  top:30%;
+  top:40%;
   text-align: center;
   z-index: 1000;
   color: white;
@@ -66,9 +66,11 @@ header.sticky > img{
 }
 
 
-header:hover {
-  background: rgba(255, 255, 255, 0.8);
-  color: #000;
+header:hover > nav{
+  color: yellow;
+  display: block;
+  -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
 }
 
 h1 {
@@ -81,12 +83,19 @@ h1 {
 h1.sticky{
   font-family: Moderne Sans, sans-serif;
   text-align: left;
-  font-size: 2rem;
+  font-size: 0rem;
   width: 100%;
   letter-spacing: .5rem;
 }
+nav{
+  display: none;
+  -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+}
 
 nav a {
+  font-family: Moderne Sans, sans-serif;
+  font-size: 2rem;
   text-decoration: none;
   color: inherit;
   padding: 2rem;
@@ -110,12 +119,12 @@ h2 {
   z-index: 100;
   background : url(1.png);
   background-position: center;
-  background-size: cover;
+  background-size: ;
     
 
 }
 div#about{
-  margin-top: 100px;
+  position: relative;
   min-height: 110vh;
   display: -webkit-box;
   display: -ms-flexbox;
