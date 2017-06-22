@@ -294,7 +294,8 @@ display: none;
 
 
 .members-right img{
-    padding: 140px
+    width: 920px;
+    margin-left:-100px; 
 }
 .blocks{
     width:1280px;
@@ -324,7 +325,7 @@ display: none;
 .ticket-block2{
     position: relative;
     width: 646px;
-    height: 400px;
+    height: 700px;
     background:rgba(255, 255, 0, 0.43);
     float: left;
 }
@@ -447,6 +448,9 @@ display: none;
     font-size:16px;
     padding: 40px;
     font-weight: 400;
+    position: absolute;
+    top: 300px;
+    z-index: 100000000;
 }
 .stt2 h1{
     padding-left: 50px;
