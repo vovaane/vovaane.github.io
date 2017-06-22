@@ -233,7 +233,7 @@ display: none;
 
 #area{
     position: relative;
-    height: 542px;
+    height: 720px;
     width: 100%;
     background: url(../img/fest-area.jpg);
     background-size: cover;
@@ -243,6 +243,7 @@ display: none;
     max-height: 542px;
     position: absolute;
     left: 275px;
+    top:100px;
 }
 .block-area{
      width:1280px;
