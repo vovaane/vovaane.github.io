@@ -64,9 +64,9 @@ function hasScrolled() {
 </head>
 
 <body id="page-top">
-    <a class="navbar-brand page-scroll" href="#page-top"><img style="position:fixed;left: 25px;z-index:100;" src="img/logo_jerk.png"></a>
+    <a class="navbar-brand page-scroll" href="#page-top"><img style="position:fixed;left: 25px;z-index:100000;" src="img/logo_jerk.png"></a>
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" >
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="z-index:100000">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header" style="display:table;">
@@ -198,7 +198,7 @@ function hasScrolled() {
                 <div class="blocks">
                    <div class="ticket-block">
                     <div class="pay">You can buy tickets online and print them or book and pay on the place. We have special offers for teenagers, students and pensioners but you should show your documents. Choose your city and click there to go to payment or booking. Let’s go!</div>
-                    <div class="city">BERLIN,GERMANY 24,25 JULY</div>
+                    <div class="city">BERLIN,GERMANY 4-2 JUNE</div>
                    </div>
                    <img src="img/ticket.png">
                    <div class="berlin"> </div>
@@ -213,12 +213,19 @@ function hasScrolled() {
                    <div class="berlin10"></div>
                    <div class="berlin11"></div>
                    <div class="berlin12"></div>
-                    <div class="ticket-block2">
+                   
+                </div>
+            </div>
+                <div class="fb">
+                    <video poster="" playsinline autoplay muted loop><source src="http://vovaane.github.io/demo/1.mp4" type="video/mp4"></video>
+                    <div class="fb-block">
+                        <div class="ticket-block2">
                         <div class="pay3">Welcome to Jerk Fest! Invite you friends or relatives or anyone else for having fun in the cool atmosphere and don’t shame!<br></br>
                          If you have some questions, you can contact us with the below data</div>
                          <img src="img/fb.png" style="padding-left:40px;">
+                    </div>
                 </div>
-                </div>
+            </div>
           
 
 
@@ -288,7 +295,7 @@ function hasScrolled() {
 })
 //text hover section
     $('.berlin').on('mouseover', function() {
-    $('.city').text('BERLIN,GERMANY 4,2 JUNE')
+    $('.city').text('BERLIN,GERMANY 4-2 JUNE')
 })
        $('.berlin2').on('mouseover', function() {
     $('.city').text('AMSTERDAM,NETHERLANDS 9-11 JUNE')
