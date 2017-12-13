@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"Безымянный_3_atlas_", frames: [[2102,0,408,612],[0,0,2100,2100]]}
+		{name:"new_atlas_", frames: [[2102,0,408,612],[0,0,2100,2100]]}
 ];
 
 
@@ -12,14 +12,14 @@ lib.ssMetadata = [
 
 
 (lib._871595634 = function() {
-	this.spriteSheet = ss["Безымянный_3_atlas_"];
+	this.spriteSheet = ss["new_atlas_"];
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Hasbro_2c_no_R_300BlueWhite = function() {
-	this.spriteSheet = ss["Безымянный_3_atlas_"];
+	this.spriteSheet = ss["new_atlas_"];
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -112,7 +112,7 @@ p.nominalBounds = new cjs.Rectangle(-142.1,-61.5,284.3,123.1);
 
 
 // stage content:
-(lib.Безымянный3 = function(mode,startPosition,loop) {
+(lib._new = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой_7
@@ -160,7 +160,7 @@ lib.properties = {
 	color: "#055EB8",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Безымянный_3_atlas_.png", id:"Безымянный_3_atlas_"}
+		{src:"images/new_atlas_.png", id:"new_atlas_"}
 	],
 	preloads: []
 };
