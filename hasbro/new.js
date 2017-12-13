@@ -160,7 +160,7 @@ lib.properties = {
 	color: "#055EB8",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/new_atlas_.png", id:"new_atlas_"}
+		{src:"http://vovaane.github.io/husbro/images/new_atlas_.png", id:"new_atlas_"}
 	],
 	preloads: []
 };
