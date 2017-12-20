@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"new_atlas_", frames: [[2102,1653,160,217],[2102,0,726,1024],[0,0,2100,2100],[2102,1026,318,625]]}
+		{name:"new_atlas_", frames: [[320,1026,250,250],[320,1278,160,217],[0,0,726,1024],[0,1026,318,625]]}
 ];
 
 
@@ -11,21 +11,21 @@ lib.ssMetadata = [
 
 
 
-(lib.children_PNG17984 = function() {
+(lib._250 = function() {
 	this.spriteSheet = ss["new_atlas_"];
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.depositphotos_7794241stockillustrationtoysbackground = function() {
+(lib.children_PNG17984 = function() {
 	this.spriteSheet = ss["new_atlas_"];
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Hasbro_2c_no_R_300BlueWhite = function() {
+(lib.depositphotos_7794241stockillustrationtoysbackground = function() {
 	this.spriteSheet = ss["new_atlas_"];
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
@@ -71,9 +71,9 @@ p.nominalBounds = new cjs.Rectangle(-73,-143.4,146,287);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой_1
-	this.instance = new lib.Hasbro_2c_no_R_300BlueWhite();
+	this.instance = new lib._250();
 	this.instance.parent = this;
-	this.instance.setTransform(-75,-75,0.071,0.071);
+	this.instance.setTransform(-75,-75,0.6,0.6);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
@@ -85,9 +85,9 @@ p.nominalBounds = new cjs.Rectangle(-75,-75,150,150);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой_1
-	this.instance = new lib.Hasbro_2c_no_R_300BlueWhite();
+	this.instance = new lib._250();
 	this.instance.parent = this;
-	this.instance.setTransform(-75,-75,0.071,0.071);
+	this.instance.setTransform(-75,-75,0.6,0.6);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
