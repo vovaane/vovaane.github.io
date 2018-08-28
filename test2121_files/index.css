@@ -1,0 +1,106 @@
+/* ::::: //evrhst-a.akamaihd.net/2115/css/style.css ::::: */
+
+body, a, p, h1, h2, h3, h4, h5, h6, ol, ul, li, form, input { outline: medium none; margin: 0px; padding: 0px; text-decoration: none; list-style: outside none none; color: inherit; font-family: Arial; }
+.clear { clear: both; }
+a.blue-link:link, a.blue-link:visited { color: rgb(146, 186, 54); text-decoration: underline; font-weight: 600; }
+a.blue-link:hover { color: rgb(234, 75, 75); text-decoration: none; }
+.content { width: 980px; margin: 0px auto; display: block; }
+header { padding-top: 15px; }
+img.logo { float: left; }
+img.soc-link { float: left; margin-top: 19px; margin-left: 60px; }
+form.search-form { float: right; width: 284px; position: relative; margin-top: 18px; }
+input.search-input { background: rgb(244, 244, 244) none repeat scroll 0% 0%; border: medium none; font-size: 14px; padding: 10px 30px 10px 12px; width: 242px; }
+img.search-icon { position: absolute; top: 9px; right: 12px; }
+.bottom-head ul li { font-size: 16px; font-weight: 700; display: inline-block; }
+.bottom-head ul { text-align: center; margin-top: 13px; border: 1px solid rgb(217, 217, 217); }
+.bottom-head ul li a { padding: 24px 15px; display: block; }
+.bottom-head ul li a:hover { background: rgb(230, 57, 23) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+section { padding-top: 30px; }
+.right { float: right; width: 300px; }
+p.news-title { display: block; background: rgb(235, 235, 235) none repeat scroll 0% 0%; font-size: 14px; text-align: center; padding: 13px 0px; border-top: 2px solid rgb(21, 101, 192); }
+.news { font-size: 14px; }
+.news ul li { padding: 15px 15px 15px 54px; position: relative; }
+.news ul li:nth-child(2) { background: rgb(235, 235, 235) none repeat scroll 0% 0%; }
+.news ul li:nth-child(1)::before { content: "1"; }
+.news ul li:nth-child(2)::before { content: "2"; }
+.news ul li:nth-child(3)::before { content: "3"; top: 25px; }
+.news ul li:nth-child(4)::before { content: "4"; }
+.news ul li:nth-child(5)::before { content: "5"; top: 25px; }
+.news ul li::before { position: absolute; background: rgb(248, 182, 34) none repeat scroll 0% 0%; width: 30px; text-align: center; color: rgb(255, 255, 255); padding: 7px 0px; left: 14px; border-radius: 50%; top: 15px; font-weight: 700; }
+img.main-img-1 { float: left; margin: 7px 15px 6px 0px; display: block; }
+img.main-img-2 { display: block; max-width: 650px; width: 100%; margin: 0px auto; }
+p.text { font-size: 15px; line-height: 25px; text-align: justify; margin: 15px 0px; }
+.left { width: 650px; float: left; }
+img.main-img-3 { float: right; display: block; margin: 7px 0px 6px 15px; }
+img.pac { float: left; margin: 7px 15px 6px 0px; }
+img.main-img-4 { display: block; max-width: 650px; width: 100%; margin: 0px auto; }
+a.order-link { width: 400px; margin: 0px auto; font-size: 16px; font-weight: 700; color: rgb(255, 255, 255); display: block; text-align: center; background: rgb(235, 59, 83) none repeat scroll 0% 0%; padding: 20px 0px; border-radius: 7px; }
+.order-button { position: relative; }
+img.arrow-2 { position: absolute; right: 56px; top: -20px; }
+img.arrow-1 { position: absolute; left: 56px; top: -20px; }
+.order-button { position: relative; margin-top: 35px; margin-bottom: 40px; }
+p.commit-title { background: rgb(235, 235, 235) none repeat scroll 0% 0%; font-size: 18px; padding: 20px; }
+p.name { font-size: 18px; font-weight: 700; text-transform: uppercase; margin-bottom: 3px; }
+img.ava {
+    float: left;
+    margin-top: 2px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px !important;
+}
+p.text-commit { font-size: 14px; line-height: 22px; text-align: justify; }
+.commit-fild { background: rgb(245, 245, 245) none repeat scroll 0% 0%; padding: 0px 20px 22px; }
+.commit p { padding-left: 80px; }
+.commit { padding: 20px 0px 7px; }
+img.footer-logo { float: left; width: 197px; }
+footer ul { width: 340px; float: left; margin-left: 18px; text-align: center; margin-top: 17px; }
+footer { font-size: 13px; font-weight: 700; margin-top: 45px; margin-bottom: 45px; }
+footer ul li { display: inline-block; padding: 0px 13px; border-right: 1px solid rgb(0, 0, 0); }
+footer ul li:last-child { border: medium none; }
+img.soc-ffote { float: right; margin-top: 7px; margin-left: 20px; }
+p.footer-txt { float: left; margin-top: 17px; }
+.soc-link-footer { float: right; }
+h1 { font-size: 36px; margin-top: -6px; }
+p.text.m-0 { margin-top: 0px; }
+.text-block-1 { border-top: 1px solid rgb(232, 232, 232); padding-top: 13px; margin-top: 8px; }
+@media screen and (max-width: 999px) {
+	.content { width: auto; padding: 0px 10px; }
+	img.soc-link { display: none; }
+	.bottom-head ul li a { padding: 24px 8px; display: block; }
+	.left { width: auto; float: none; }
+	.right { display: none; }
+	img.footer-logo { float: none; margin: 0px auto 10px; clear: both; display: block; }
+	footer { font-size: 13px; font-weight: 700; margin-top: 20px; margin-bottom: 0px; padding-bottom: 20px; }
+	footer ul { margin-left: 0px; }
+	.soc-link-footer { float: right; margin-right: 13px; }
+	img.arrow-2 { right: 115px; }
+	img.arrow-1 { left: 115px; }
+}
+@media screen and (max-width: 767px) {
+	form.search-form { display: none; }
+	img.logo { float: none; display: block; margin: 10px auto; }
+	.bottom-head ul li:nth-child(7), .bottom-head ul li:nth-child(6), .bottom-head ul li:nth-child(8), .bottom-head ul li:nth-child(9) { display: none ! important; }
+	img.pac { float: none; margin: 0px auto; display: block; }
+	img.main-img-3 { float: none; margin: 0px auto; display: block; }
+	img.main-img-1 { display: block; float: none; margin: 0px auto; }
+	p.text.m-0 { margin-top: 15px; }
+	.text-block-1 { border-top: 1px solid rgb(232, 232, 232); padding-top: 18px; margin-top: 8px; }
+	img.arrow-1 { display: none; }
+	img.arrow-2 { display: none; }
+	footer ul { display: none; }
+	.soc-link-footer { display: none; }
+	img.footer-logo { margin: 0px auto; }
+	section { padding-top: 20px; }
+}
+@media screen and (max-width: 479px) {
+	a.order-link { width: 100%; max-width: 400px; }
+	span.block-320 { display: block; }
+	img.logo { width: 100%; max-width: 358px; }
+	.bottom-head ul { display: none; }
+	h1 { font-size: 25px; margin-top: -6px; }
+	p.text { text-align: left; }
+	p.text-commit { text-align: left; }
+	.commit-fild { background: rgb(245, 245, 245) none repeat scroll 0% 0%; padding: 0px 10px 22px; }
+	.commit p { padding-left: 70px; }
+	p.name { font-size: 14px; }
+}
