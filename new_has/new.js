@@ -490,70 +490,7 @@ p.nominalBounds = new cjs.Rectangle(-133.7,-72,267.5,144);
 	this.shape_12 = new cjs.Shape();
 	this.shape_12.graphics.f("#FFFFFF").s().p("AAcBsIgZg3IgDgFIgFgKQgIgQgFgEQgGgEgKAAIAABeIgsAAIAAjWIAsAAIAABbQAOgBAFgGQAFgGAKgbQANgjAOgIQANgJAeAAIAHAAIAAAgIgHgBQgNAAgGAEQgGADgEAHIgLAcQgEALgFAHQgEAIgMAHQAPACAJANQAJAMALAXIAeA7g");
 	this.shape_12.setTransform(-18.3,-18.1);
-
-	this.shape_13 = new cjs.Shape();
-	this.shape_13.graphics.f("#FFFFFF").s().p("AArBrIAAheIhUAAIAABeIgsAAIAAjVIAsAAIAABUIBUAAIAAhUIArAAIAADVg");
-	this.shape_13.setTransform(-39.4,-18.1);
-
-	this.shape_14 = new cjs.Shape();
-	this.shape_14.graphics.f("#FFFFFF").s().p("AhRBrIAAjVICfAAIAAAkIhzAAIAAAvIBrAAIAAAkIhrAAIAAA6IB2AAIAAAkg");
-	this.shape_14.setTransform(-59.8,-18.1);
-
-	this.shape_15 = new cjs.Shape();
-	this.shape_15.graphics.f("#FFFFFF").s().p("AhZBrIAAjVICgAAIAAAkIh0AAIAAAxIA5AAQAYAAAQAGQAPAGAMAPQALAQAAAVQAAAWgLAPQgMAQgOAGQgPAFgaAAgAgtBHIAqAAQATAAAIgCQAJgCAGgHQAGgHAAgKQAAgPgLgHQgKgHgZAAIgsAAg");
-	this.shape_15.setTransform(-80.5,-18.1);
-
-	this.shape_16 = new cjs.Shape();
-	this.shape_16.graphics.f("#FFFFFF").s().p("AhRBrIAAjVICeAAIAAAkIhzAAIAAAvIBrAAIAAAkIhrAAIAAA6IB3AAIAAAkg");
-	this.shape_16.setTransform(-101.3,-18.1);
-
-	this.shape_17 = new cjs.Shape();
-	this.shape_17.graphics.f("#FFFFFF").s().p("AhRBrIAAjVIBFAAQAnAAAMADQASAFANAQQAMAQAAAaQAAATgHAOQgHAMgLAIQgLAIgMACQgPADgdAAIgcAAIAABRgAgmgJIAYAAQAYAAAJgEQAJgDAFgHQAEgHAAgKQAAgMgGgHQgHgIgLgCQgIgBgWAAIgVAAg");
-	this.shape_17.setTransform(-121.3,-18.1);
-
-	this.shape_18 = new cjs.Shape();
-	this.shape_18.graphics.f("#FFFFFF").s().p("AhZBrIAAjVIAsAAIAABVIA5AAQApAAASAUQATASAAAbQAAAWgMAPQgLAPgOAGQgOAFgbAAgAgtBHIAqAAQAUAAAHgCQAIgCAHgHQAGgHAAgKQAAgPgLgHQgKgHgZAAIgsAAg");
-	this.shape_18.setTransform(98.2,-53.6);
-
-	this.shape_19 = new cjs.Shape();
-	this.shape_19.graphics.f("#FFFFFF").s().p("AgVBrIAAixIg/AAIAAgkICpAAIAAAkIg/AAIAACxg");
-	this.shape_19.setTransform(77.8,-53.6);
-
-	this.shape_20 = new cjs.Shape();
-	this.shape_20.graphics.f("#FFFFFF").s().p("AAtBrIAAiLIhWCLIgrAAIAAjVIAoAAIAACNIBWiNIArAAIAADVg");
-	this.shape_20.setTransform(57.9,-53.6);
-
-	this.shape_21 = new cjs.Shape();
-	this.shape_21.graphics.f("#FFFFFF").s().p("AhRBrIAAjVIBFAAQAnAAAMADQASAFANAQQAMAQAAAaQAAATgHAOQgHAMgLAIQgLAIgMACQgPADgdAAIgcAAIAABRgAgmgJIAYAAQAYAAAJgEQAJgDAFgHQAEgHAAgKQAAgMgGgHQgHgIgLgCQgIgBgWAAIgVAAg");
-	this.shape_21.setTransform(37.5,-53.6);
-
-	this.shape_22 = new cjs.Shape();
-	this.shape_22.graphics.f("#FFFFFF").s().p("AA9BrIgTgxIhVAAIgSAxIguAAIBUjVIAtAAIBWDVgAAcAWIgdhOIgdBOIA6AAg");
-	this.shape_22.setTransform(16.2,-53.6);
-
-	this.shape_23 = new cjs.Shape();
-	this.shape_23.graphics.f("#FFFFFF").s().p("ABECDIAAgvIiHAAIAAAvIgkAAIAAhTIATAAQANgcAEgjQAEglAAg3IAAgXICUAAIAACyIATAAIAABTgAgnAwIBRAAIAAiOIg/AAQAABhgSAtg");
-	this.shape_23.setTransform(-5.6,-51.2);
-
-	this.shape_24 = new cjs.Shape();
-	this.shape_24.graphics.f("#FFFFFF").s().p("AhLBSQgcgeAAgzQAAgfAKgXQAHgQANgNQAMgNAPgGQAUgJAaAAQAvAAAdAeQAcAdAAAzQAAA0gcAeQgcAdgwAAQgvAAgcgdgAgqg2QgRASAAAkQAAAlARASQARATAZAAQAaAAARgTQAQgSAAglQAAglgQgRQgQgTgbAAQgaAAgQATg");
-	this.shape_24.setTransform(-27.5,-53.6);
-
-	this.shape_25 = new cjs.Shape();
-	this.shape_25.graphics.f("#FFFFFF").s().p("AAqBrIAAixIhTAAIAACxIgrAAIAAjVICpAAIAADVg");
-	this.shape_25.setTransform(-50,-53.6);
-
-	this.shape_26 = new cjs.Shape();
-	this.shape_26.graphics.f("#FFFFFF").s().p("AhLBSQgcgeAAgzQAAgfAKgXQAHgQANgNQAMgNAPgGQAUgJAaAAQAvAAAdAeQAcAdAAAzQAAA0gcAeQgcAdgwAAQgvAAgcgdgAgqg2QgRASAAAkQAAAlARASQARATAZAAQAaAAARgTQAQgSAAglQAAglgQgRQgQgTgbAAQgaAAgQATg");
-	this.shape_26.setTransform(-80.6,-53.6);
-
-	this.shape_27 = new cjs.Shape();
-	this.shape_27.graphics.f("#FFFFFF").s().p("AgVBrIAAixIg/AAIAAgkICpAAIAAAkIg/AAIAACxg");
-	this.shape_27.setTransform(-101.5,-53.6);
-
-	this.shape_28 = new cjs.Shape();
-	this.shape_28.graphics.f("#FFFFFF").s().p("AApBrIAAhWQgNAGgNADQgMADgMAAQggAAgVgPQgWgQAAgkIAAhIIArAAIAAAzQAAAZACAIQACAIAJAGQAJAGASAAQANAAALgDQAKgDAIgGIAAhcIAsAAIAADVg");
-	this.shape_28.setTransform(-121.4,-53.6);
+	
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_28},{t:this.shape_27},{t:this.shape_26},{t:this.shape_25},{t:this.shape_24},{t:this.shape_23},{t:this.shape_22},{t:this.shape_21},{t:this.shape_20},{t:this.shape_19},{t:this.shape_18},{t:this.shape_17},{t:this.shape_16},{t:this.shape_15},{t:this.shape_14},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 
